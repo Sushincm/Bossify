@@ -483,7 +483,7 @@ header.head-scrolling .nav-logo img {
 
 .search-card-img img {
   width: 100%;
-  height: 140px;
+  height: auto;
   object-fit: cover;
   display: block;
 }
@@ -519,7 +519,7 @@ header.head-scrolling .nav-logo img {
 
 .search-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 0.75rem;
 }
 
@@ -1901,7 +1901,7 @@ header.head-scrolling .nav-logo img {
     font-size: 20px;
   }
   .search-grid{
-    grid-template-columns: repeat(2);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
