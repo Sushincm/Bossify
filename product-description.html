@@ -1,556 +1,849 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bossify</title>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/thin/style.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
+    />
+    <!-- Owl-carousel -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Bossify</title>
-  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
-  <link rel="stylesheet" type="text/css"
-    href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/thin/style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" />
-  <!-- Owl-carousel -->
-  <link rel="stylesheet" href="css/owl.carousel.min.css">
-  <link rel="stylesheet" href="css/owl.theme.default.min.css">
-  <!-- Swiper CSS -->
-  <link rel="stylesheet" href="css/swiper-bundle.min.css">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/style.css" />
-</head>
-
-<body>
-  <header class="top-bar position-fixed w-100">
-
+  <body>
+    <header class="top-bar position-fixed w-100 subpage-header">
       <!-- Mega menu Buttons Hover -->
-  <div id="megaMenu" class="mega-menu">
-    <div class="container-fluid h-100">
-      <div class="row h-100">
-        <!-- Left: columns -->
-        <div class="col-lg-8 mega-columns">
-          <!-- MEN -->
-          <div class="mega-panel" data-menu="men">
-            <div class="row">
-              <div class="col-3">
-                <h6 class="mega-title">New Arrivals</h6>
-                <a href="#" class="mega-link">All New In</a>
+      <div id="megaMenu" class="mega-menu">
+        <div class="container-fluid h-100">
+          <div class="row h-100">
+            <!-- Left: columns -->
+            <div class="col-lg-8 mega-columns">
+              <!-- MEN -->
+              <div class="mega-panel" data-menu="men">
+                <div class="row">
+                  <div class="col-3">
+                    <h6 class="mega-title">New Arrivals</h6>
+                    <a href="#" class="mega-link">All New In</a>
+                  </div>
+                  <div class="col-3">
+                    <h6 class="mega-title">Tops</h6>
+                    <a href="#" class="mega-link">Blouses</a>
+                    <a href="#" class="mega-link">Knits</a>
+                    <a href="#" class="mega-link">Tees</a>
+                  </div>
+                  <div class="col-3">
+                    <h6 class="mega-title">Bottoms</h6>
+                    <a href="#" class="mega-link">Jeans</a>
+                    <a href="#" class="mega-link">Pants</a>
+                    <a href="#" class="mega-link">Shorts</a>
+                  </div>
+                  <div class="col-3">
+                    <h6 class="mega-title">Outerwear</h6>
+                    <a href="#" class="mega-link">Jackets</a>
+                    <a href="#" class="mega-link">Coats</a>
+                  </div>
+                </div>
               </div>
-              <div class="col-3">
-                <h6 class="mega-title">Tops</h6>
-                <a href="#" class="mega-link">Blouses</a>
-                <a href="#" class="mega-link">Knits</a>
-                <a href="#" class="mega-link">Tees</a>
+
+              <!-- WOMEN -->
+              <div class="mega-panel" data-menu="women">
+                <div class="row">
+                  <div class="col-3">
+                    <h6 class="mega-title">New Arrivals</h6>
+                    <a href="#" class="mega-link">All New In</a>
+                  </div>
+                  <div class="col-3">
+                    <h6 class="mega-title">Tops</h6>
+                    <a href="#" class="mega-link">Blouses</a>
+                    <a href="#" class="mega-link">Knits</a>
+                    <a href="#" class="mega-link">Tees</a>
+                  </div>
+                </div>
               </div>
-              <div class="col-3">
-                <h6 class="mega-title">Bottoms</h6>
-                <a href="#" class="mega-link">Jeans</a>
-                <a href="#" class="mega-link">Pants</a>
-                <a href="#" class="mega-link">Shorts</a>
+
+              <!-- KIDS -->
+              <div class="mega-panel" data-menu="kids">
+                <div class="row">
+                  <div class="col-3">
+                    <h6 class="mega-title">New Arrivals</h6>
+                    <a href="#" class="mega-link">All New In</a>
+                  </div>
+                  <div class="col-3">
+                    <h6 class="mega-title">Tops</h6>
+                    <a href="#" class="mega-link">Blouses</a>
+                    <a href="#" class="mega-link">Knits</a>
+                    <a href="#" class="mega-link">Tees</a>
+                  </div>
+                </div>
               </div>
-              <div class="col-3">
-                <h6 class="mega-title">Outerwear</h6>
-                <a href="#" class="mega-link">Jackets</a>
-                <a href="#" class="mega-link">Coats</a>
+
+              <!-- SALE -->
+              <div class="mega-panel" data-menu="sale">
+                <div class="row">
+                  <div class="col-3">
+                    <h6 class="mega-title">New Arrivals</h6>
+                    <a href="#" class="mega-link">All New In</a>
+                  </div>
+                  <div class="col-3">
+                    <h6 class="mega-title">Tops</h6>
+                    <a href="#" class="mega-link">Blouses</a>
+                    <a href="#" class="mega-link">Knits</a>
+                    <a href="#" class="mega-link">Tees</a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- BRANDS -->
+              <div class="mega-panel" data-menu="brands">
+                <div class="row">
+                  <div class="col-3">
+                    <h6 class="mega-title">New Arrivals</h6>
+                    <a href="#" class="mega-link">All New In</a>
+                  </div>
+                  <div class="col-3">
+                    <h6 class="mega-title">Tops</h6>
+                    <a href="#" class="mega-link">Blouses</a>
+                    <a href="#" class="mega-link">Knits</a>
+                    <a href="#" class="mega-link">Tees</a>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
 
-          <!-- WOMEN -->
-          <div class="mega-panel" data-menu="women">
-            <div class="row">
-              <div class="col-3">
-                <h6 class="mega-title">New Arrivals</h6>
-                <a href="#" class="mega-link">All New In</a>
-              </div>
-              <div class="col-3">
-                <h6 class="mega-title">Tops</h6>
-                <a href="#" class="mega-link">Blouses</a>
-                <a href="#" class="mega-link">Knits</a>
-                <a href="#" class="mega-link">Tees</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- KIDS -->
-          <div class="mega-panel" data-menu="kids">
-            <div class="row">
-              <div class="col-3">
-                <h6 class="mega-title">New Arrivals</h6>
-                <a href="#" class="mega-link">All New In</a>
-              </div>
-              <div class="col-3">
-                <h6 class="mega-title">Tops</h6>
-                <a href="#" class="mega-link">Blouses</a>
-                <a href="#" class="mega-link">Knits</a>
-                <a href="#" class="mega-link">Tees</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- SALE -->
-          <div class="mega-panel" data-menu="sale">
-            <div class="row">
-              <div class="col-3">
-                <h6 class="mega-title">New Arrivals</h6>
-                <a href="#" class="mega-link">All New In</a>
-              </div>
-              <div class="col-3">
-                <h6 class="mega-title">Tops</h6>
-                <a href="#" class="mega-link">Blouses</a>
-                <a href="#" class="mega-link">Knits</a>
-                <a href="#" class="mega-link">Tees</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- BRANDS -->
-          <div class="mega-panel" data-menu="brands">
-            <div class="row">
-              <div class="col-3">
-                <h6 class="mega-title">New Arrivals</h6>
-                <a href="#" class="mega-link">All New In</a>
-              </div>
-              <div class="col-3">
-                <h6 class="mega-title">Tops</h6>
-                <a href="#" class="mega-link">Blouses</a>
-                <a href="#" class="mega-link">Knits</a>
-                <a href="#" class="mega-link">Tees</a>
+            <!-- Right: image / promo -->
+            <div class="col-lg-4 mega-media d-none d-lg-block">
+              <div class="mega-media-inner">
+                <img
+                  src="https://images.pexels.com/photos/994523/pexels-photo-994523.jpeg"
+                  alt="New in"
+                  class="img-fluid w-100 h-100 object-fit-cover"
+                />
+                <button class="mega-cta">
+                  NEW IN WOMEN
+                  <i class="ri-arrow-right-line"></i>
+                </button>
               </div>
             </div>
           </div>
         </div>
-
-        <!-- Right: image / promo -->
-        <div class="col-lg-4 mega-media d-none d-lg-block">
-          <div class="mega-media-inner">
-            <img src="https://images.pexels.com/photos/994523/pexels-photo-994523.jpeg" alt="New in"
-              class="img-fluid w-100 h-100 object-fit-cover" />
-            <button class="mega-cta">
-              NEW IN WOMEN
-              <i class="ri-arrow-right-line"></i>
-            </button>
-          </div>
-        </div>
       </div>
-    </div>
-  </div>
 
-    <div class="top-bar-inner top-bar-gap">
-      <div class="main-container">
-        Free home delivery on order worth ₹699 and above
-      </div>
-    </div>
-
-    <div class="top-bar-gap bg-light">
-      <div class="top-bar-right text-center">
+      <div class="top-bar-inner top-bar-gap">
         <div class="main-container">
-          <div class="top-bar-rotator" id="topBarRotator">
-            <div class="top-bar-message">
-              Exceptional Customer Service @ 000 000 00000
-            </div>
-            <div class="top-bar-message">
-              No question asked return within 30 days
-            </div>
-            <div class="top-bar-message">
-              Free alterations on all ethnic wear
+          Free home delivery on order worth ₹699 and above
+        </div>
+      </div>
+
+      <div class="top-bar-gap bg-light top-bar-second">
+        <div class="top-bar-right text-center">
+          <div class="main-container">
+            <div class="top-bar-rotator" id="topBarRotator">
+              <div class="top-bar-message">
+                Exceptional Customer Service @ 000 000 00000
+              </div>
+              <div class="top-bar-message">
+                No question asked return within 30 days
+              </div>
+              <div class="top-bar-message">
+                Free alterations on all ethnic wear
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <!-- Main header -->
-    <div class="d-flex align-items-center justify-content-between header-content">
-      <div class="nav-links d-flex align-items-center gap-3">
-        <button class="top-link header-links d-none d-lg-flex" data-menu="men">
-          Men
-        </button>
-        <button class="top-link header-links d-none d-lg-flex" data-menu="women">
-          Women
-        </button>
-        <button class="top-link header-links d-none d-lg-flex" data-menu="kids">
-          Kids
-        </button>
-        <button class="top-link header-links d-none d-lg-flex" data-menu="sale">
-          Sale
-        </button>
-        <button class="top-link header-links d-none d-lg-flex" data-menu="brands">
-          Brands
-        </button>
-        <!-- mobile -->
-        <button class="humbrug d-block d-lg-none nav-left-icons p-0 header-links">
-          <i class="ph-thin ph-list"></i>
-        </button>
-        <button class="search-mob-nav d-block d-lg-none nav-left-icons p-0 header-links">
-          <i class="ph-thin ph-magnifying-glass"></i>
-        </button>
-      </div>
-      <div class="nav-logo">
-        <a href="index.html">
-          <img src="images/Bossify-Logo.svg" />
-        </a>
-      </div>
-      <div class="nav-right d-flex align-items-center gap-3">
-        <div class="search-nav d-none d-lg-block">
-          <button class="header-links search-button-nav" id="searchDesktopBtn">
+      <!-- Main header -->
+      <div
+        class="d-flex align-items-center justify-content-between header-content"
+      >
+        <div class="nav-links d-flex align-items-center gap-3">
+          <button
+            class="top-link header-links d-none d-lg-flex"
+            data-menu="men"
+          >
+            Men
+          </button>
+          <button
+            class="top-link header-links d-none d-lg-flex"
+            data-menu="women"
+          >
+            Women
+          </button>
+          <button
+            class="top-link header-links d-none d-lg-flex"
+            data-menu="kids"
+          >
+            Kids
+          </button>
+          <button
+            class="top-link header-links d-none d-lg-flex"
+            data-menu="sale"
+          >
+            Sale
+          </button>
+          <button
+            class="top-link header-links d-none d-lg-flex"
+            data-menu="brands"
+          >
+            Brands
+          </button>
+          <!-- mobile -->
+          <button
+            class="humbrug d-block d-lg-none nav-left-icons p-0 header-links"
+          >
+            <i class="ph-thin ph-list"></i>
+          </button>
+          <button
+            class="search-mob-nav d-block d-lg-none nav-left-icons p-0 header-links"
+          >
             <i class="ph-thin ph-magnifying-glass"></i>
-            Search
           </button>
         </div>
-        <div class="d-block d-lg-none"></div>
-        <a href="#" class="header-links"><i class="ph-thin ph-user"></i></a>
-        <a href="#" class="header-links d-none d-lg-block"><i class="ph-thin ph-heart-straight"></i></a>
-        <a href="#" class="header-links"><i class="ph-thin ph-shopping-bag"></i></a>
-      </div>
-    </div>
-  </header>
-  <!-- Mobile full-screen menu -->
-  <div class="mobile-menu-overlay d-flex d-lg-none" id="mobileMenu">
-    <div class="mobile-menu-header">
-      <div class="mobile-menu-tabs">
-        <button class="mobile-tab active" data-tab="men">Men</button>
-        <button class="mobile-tab" data-tab="women">Women</button>
-        <button class="mobile-tab" data-tab="kids">Kids</button>
-        <button class="mobile-tab" data-tab="sale">Sale</button>
-        <button class="mobile-tab" data-tab="brands">Brands</button>
-      </div>
-      <button class="mobile-menu-close" id="mobileMenuClose">
-        <i class="ph-thin ph-x"></i>
-      </button>
-    </div>
-
-    <div class="mobile-menu-body">
-      <!-- Left column example for MEN -->
-      <div class="mobile-menu-panel active" data-panel="men">
-        <ul class="mobile-menu-list">
-          <li><a href="#">New &amp; Trending</a></li>
-          <li><a href="#">Shoes</a></li>
-          <li><a href="#">Accessories</a></li>
-          <li><a href="#">Apparels</a></li>
-          <li><a href="#">Brands</a></li>
-          <li><a href="#">% Sale</a></li>
-        </ul>
-      </div>
-
-      <!-- other panels (Women / Kids / Sale / Brands) -->
-      <div class="mobile-menu-panel" data-panel="women">
-        <ul class="mobile-menu-list">
-          <li><a href="#">New In</a></li>
-          <li><a href="#">Sarees</a></li>
-          <li><a href="#">Salwar Suits</a></li>
-          <li><a href="#">Kurta Sets</a></li>
-        </ul>
-      </div>
-
-      <!-- repeat as needed for kids, sale, brands -->
-    </div>
-
-    <div class="mobile-menu-footer">
-      <a href="#"><i class="ph-thin ph-cube"></i> Track your order</a>
-      <a href="#"><i class="ph-thin ph-phone"></i> Contact</a>
-      <a href="#"><i class="ph-thin ph-chat-circle-dots"></i> Chat with us</a>
-      <a href="#"><i class="ph-thin ph-user"></i> My Account</a>
-      <a href="#"><i class="ph-thin ph-heart-straight"></i> Wishlist</a>
-    </div>
-  </div>
-
-  <!-- Mobile search overlay -->
-  <div class="search-overlay" id="searchOverlay">
-    <div class="search-overlay-header">
-      <div class="search-input-wrap">
-        <i class="ph ph-magnifying-glass"></i>
-        <input type="text" id="searchInput" placeholder="Search" autocomplete="off" />
-      </div>
-      <button class="search-overlay-close" id="searchOverlayClose">
-        <i class="ph-thin ph-x"></i>
-      </button>
-    </div>
-
-    <div class="search-overlay-body">
-      <p class="search-section-title">Suggested products</p>
-
-      <div class="search-results-scroll">
-        <div class="search-grid">
-          <a href="#" class="search-card">
-            <div class="search-card-img">
-              <img src="images/arrivals-2.webp" alt="Product 1" />
-            </div>
-            <div class="search-card-info">
-              <span class="search-card-brand">Brand name</span>
-              <span class="search-card-name">Product title</span>
-              <span class="search-card-price">₹ 4,999.00</span>
-            </div>
-          </a>
-
-          <a href="#" class="search-card">
-            <div class="search-card-img">
-              <img src="images/arrivals-1.webp" alt="Product 2" />
-            </div>
-            <div class="search-card-info">
-              <span class="search-card-brand">Brand name</span>
-              <span class="search-card-name">Product title</span>
-              <span class="search-card-price">₹ 3,999.00</span>
-            </div>
-          </a>
-
-          <a href="#" class="search-card">
-            <div class="search-card-img">
-              <img src="images/arrivals-3.webp" alt="Product 1" />
-            </div>
-            <div class="search-card-info">
-              <span class="search-card-brand">Brand name</span>
-              <span class="search-card-name">Product title</span>
-              <span class="search-card-price">₹ 4,999.00</span>
-            </div>
-          </a>
-
-          <a href="#" class="search-card">
-            <div class="search-card-img">
-              <img src="images/arrivals-2.webp" alt="Product 1" />
-            </div>
-            <div class="search-card-info">
-              <span class="search-card-brand">Brand name</span>
-              <span class="search-card-name">Product title</span>
-              <span class="search-card-price">₹ 4,999.00</span>
-            </div>
-          </a>
-
-          <a href="#" class="search-card">
-            <div class="search-card-img">
-              <img src="images/arrivals-1.webp" alt="Product 2" />
-            </div>
-            <div class="search-card-info">
-              <span class="search-card-brand">Brand name</span>
-              <span class="search-card-name">Product title</span>
-              <span class="search-card-price">₹ 3,999.00</span>
-            </div>
-          </a>
-
-          <a href="#" class="search-card">
-            <div class="search-card-img">
-              <img src="images/arrivals-3.webp" alt="Product 1" />
-            </div>
-            <div class="search-card-info">
-              <span class="search-card-brand">Brand name</span>
-              <span class="search-card-name">Product title</span>
-              <span class="search-card-price">₹ 4,999.00</span>
-            </div>
+        <div class="nav-logo">
+          <a href="index.html">
+            <img src="images/Bossify-Logo.svg" />
           </a>
         </div>
-      </div>
-    </div>
-  </div>
-
-  
-
-
-  <section class="features-strip py-5">
-    <div class="main-container">
-      <div class="row text-center gy-4">
-        <div class="col-6 col-md-6 col-lg-3">
-          <div class="feature-item">
-            <i class="ph-thin ph-truck feature-icon"></i>
-            <h6 class="feature-title text-uppercase mb-2">
-              On-time delivery, every time!
-            </h6>
-            <p class="feature-text mb-0">
-              Enjoy reliable, on-time delivery, you never have to wait to
-              shine in your new look!
-            </p>
+        <div class="nav-right d-flex align-items-center gap-3">
+          <div class="search-nav d-none d-lg-block">
+            <button
+              class="header-links search-button-nav"
+              id="searchDesktopBtn"
+            >
+              <i class="ph-thin ph-magnifying-glass"></i>
+              Search
+            </button>
           </div>
+          <div class="d-block d-lg-none"></div>
+          <a href="#" class="header-links"><i class="ph-thin ph-user"></i></a>
+          <a href="#" class="header-links d-none d-lg-block"
+            ><i class="ph-thin ph-heart-straight"></i
+          ></a>
+          <a href="#" class="header-links"
+            ><i class="ph-thin ph-shopping-bag"></i
+          ></a>
+        </div>
+      </div>
+    </header>
+    <!-- Mobile full-screen menu -->
+    <div class="mobile-menu-overlay d-flex d-lg-none" id="mobileMenu">
+      <div class="mobile-menu-header">
+        <div class="mobile-menu-tabs">
+          <button class="mobile-tab active" data-tab="men">Men</button>
+          <button class="mobile-tab" data-tab="women">Women</button>
+          <button class="mobile-tab" data-tab="kids">Kids</button>
+          <button class="mobile-tab" data-tab="sale">Sale</button>
+          <button class="mobile-tab" data-tab="brands">Brands</button>
+        </div>
+        <button class="mobile-menu-close" id="mobileMenuClose">
+          <i class="ph-thin ph-x"></i>
+        </button>
+      </div>
+
+      <div class="mobile-menu-body">
+        <!-- Left column example for MEN -->
+        <div class="mobile-menu-panel active" data-panel="men">
+          <ul class="mobile-menu-list">
+            <li><a href="#">New &amp; Trending</a></li>
+            <li><a href="#">Shoes</a></li>
+            <li><a href="#">Accessories</a></li>
+            <li><a href="#">Apparels</a></li>
+            <li><a href="#">Brands</a></li>
+            <li><a href="#">% Sale</a></li>
+          </ul>
         </div>
 
-        <div class="col-6 col-md-6 col-lg-3">
-          <div class="feature-item">
-            <i class="ph-thin ph-money feature-icon"></i>
-            <h6 class="feature-title text-uppercase mb-2">Value for money</h6>
-            <p class="feature-text mb-0">
-              High quality pieces that deliver amazing value for every penny
-              spent.
-            </p>
-          </div>
+        <!-- other panels (Women / Kids / Sale / Brands) -->
+        <div class="mobile-menu-panel" data-panel="women">
+          <ul class="mobile-menu-list">
+            <li><a href="#">New In</a></li>
+            <li><a href="#">Sarees</a></li>
+            <li><a href="#">Salwar Suits</a></li>
+            <li><a href="#">Kurta Sets</a></li>
+          </ul>
         </div>
 
-        <div class="col-6 col-md-6 col-lg-3">
-          <div class="feature-item">
-            <i class="ph-thin ph-headset feature-icon"></i>
-            <h6 class="feature-title text-uppercase mb-2">
-              Dedicated sales support
-            </h6>
-            <p class="feature-text mb-0">
-              Count on our dedicated sales support team to assist you with
-              every need.
-            </p>
-          </div>
-        </div>
+        <!-- repeat as needed for kids, sale, brands -->
+      </div>
 
-        <div class="col-6 col-md-6 col-lg-3">
-          <div class="feature-item">
-            <i class="ph-thin ph-credit-card feature-icon"></i>
-            <h6 class="feature-title text-uppercase mb-2">Secure payments</h6>
-            <p class="feature-text mb-0">
-              Make payments with peace of mind, knowing your information is
-              fully protected.
-            </p>
+      <div class="mobile-menu-footer">
+        <a href="#"><i class="ph-thin ph-cube"></i> Track your order</a>
+        <a href="#"><i class="ph-thin ph-phone"></i> Contact</a>
+        <a href="#"><i class="ph-thin ph-chat-circle-dots"></i> Chat with us</a>
+        <a href="#"><i class="ph-thin ph-user"></i> My Account</a>
+        <a href="#"><i class="ph-thin ph-heart-straight"></i> Wishlist</a>
+      </div>
+    </div>
+
+    <!-- Mobile search overlay -->
+    <div class="search-overlay" id="searchOverlay">
+      <div class="search-overlay-header">
+        <div class="search-input-wrap">
+          <i class="ph ph-magnifying-glass"></i>
+          <input
+            type="text"
+            id="searchInput"
+            placeholder="Search"
+            autocomplete="off"
+          />
+        </div>
+        <button class="search-overlay-close" id="searchOverlayClose">
+          <i class="ph-thin ph-x"></i>
+        </button>
+      </div>
+
+      <div class="search-overlay-body">
+        <p class="search-section-title">Suggested products</p>
+
+        <div class="search-results-scroll">
+          <div class="search-grid">
+            <a href="#" class="search-card">
+              <div class="search-card-img">
+                <img src="images/arrivals-2.webp" alt="Product 1" />
+              </div>
+              <div class="search-card-info">
+                <span class="search-card-brand">Brand name</span>
+                <span class="search-card-name">Product title</span>
+                <span class="search-card-price">₹ 4,999.00</span>
+              </div>
+            </a>
+
+            <a href="#" class="search-card">
+              <div class="search-card-img">
+                <img src="images/arrivals-1.webp" alt="Product 2" />
+              </div>
+              <div class="search-card-info">
+                <span class="search-card-brand">Brand name</span>
+                <span class="search-card-name">Product title</span>
+                <span class="search-card-price">₹ 3,999.00</span>
+              </div>
+            </a>
+
+            <a href="#" class="search-card">
+              <div class="search-card-img">
+                <img src="images/arrivals-3.webp" alt="Product 1" />
+              </div>
+              <div class="search-card-info">
+                <span class="search-card-brand">Brand name</span>
+                <span class="search-card-name">Product title</span>
+                <span class="search-card-price">₹ 4,999.00</span>
+              </div>
+            </a>
+
+            <a href="#" class="search-card">
+              <div class="search-card-img">
+                <img src="images/arrivals-2.webp" alt="Product 1" />
+              </div>
+              <div class="search-card-info">
+                <span class="search-card-brand">Brand name</span>
+                <span class="search-card-name">Product title</span>
+                <span class="search-card-price">₹ 4,999.00</span>
+              </div>
+            </a>
+
+            <a href="#" class="search-card">
+              <div class="search-card-img">
+                <img src="images/arrivals-1.webp" alt="Product 2" />
+              </div>
+              <div class="search-card-info">
+                <span class="search-card-brand">Brand name</span>
+                <span class="search-card-name">Product title</span>
+                <span class="search-card-price">₹ 3,999.00</span>
+              </div>
+            </a>
+
+            <a href="#" class="search-card">
+              <div class="search-card-img">
+                <img src="images/arrivals-3.webp" alt="Product 1" />
+              </div>
+              <div class="search-card-info">
+                <span class="search-card-brand">Brand name</span>
+                <span class="search-card-name">Product title</span>
+                <span class="search-card-price">₹ 4,999.00</span>
+              </div>
+            </a>
           </div>
         </div>
       </div>
     </div>
-  </section>
-  <footer class="site-footer">
-    <div class="footer-top">
+
+    <!-- PDP -->
+    <section class="bossify-pdp">
       <div class="main-container">
-        <div class="footer-columns">
-          <div class="footer-col">
-            <h6 class="footer-heading">Shop</h6>
-            <ul class="footer-links">
-              <li><a href="#">Women</a></li>
-              <li><a href="#">Men</a></li>
-              <li><a href="#">Kids</a></li>
-              <li><a href="#">Accessories</a></li>
-              <li><a href="#">Gift Card</a></li>
-            </ul>
+        <div class="row">
+          <!-- LEFT: Product images (2-column grid) -->
+          <div class="col-lg-7">
+            <!-- Desktop grid -->
+            <div class="bossify-pdp-gallery d-none d-lg-block">
+              <div class="row g-3">
+                <!-- Add 4 or 6 images; Bootstrap grid will make 2 per row -->
+                <div class="col-6">
+                  <a href="product-media-1.html" class="bossify-media-link">
+                    <img
+                      class="bossify-media-img"
+                      src="https://images.pexels.com/photos/6311570/pexels-photo-6311570.jpeg"
+                      alt="Product image 1"
+                    />
+                  </a>
+                </div>
+
+                <div class="col-6">
+                  <a href="product-media-2.html" class="bossify-media-link">
+                    <img
+                      class="bossify-media-img"
+                      src="https://images.pexels.com/photos/6311565/pexels-photo-6311565.jpeg"
+                      alt="Product image 2"
+                    />
+                  </a>
+                </div>
+
+                <div class="col-6">
+                  <a href="product-media-3.html" class="bossify-media-link">
+                    <img
+                      class="bossify-media-img"
+                      src="https://images.pexels.com/photos/6311587/pexels-photo-6311587.jpeg"
+                      alt="Product image 3"
+                    />
+                  </a>
+                </div>
+
+                <div class="col-6">
+                  <a href="product-media-4.html" class="bossify-media-link">
+                    <img
+                      class="bossify-media-img"
+                      src="https://images.pexels.com/photos/6311574/pexels-photo-6311574.jpeg"
+                      alt="Product image 4"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Mobile: single carousel -->
+            <div class="bossify-pdp-gallery-mobile d-lg-none">
+              <div
+                id="bossifyPdpCarousel"
+                class="carousel slide"
+                data-bs-ride="false"
+              >
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      src="https://images.pexels.com/photos/6311570/pexels-photo-6311570.jpeg"
+                      class="d-block w-100 bossify-carousel-img"
+                      alt="Product image 1"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="https://images.pexels.com/photos/6311565/pexels-photo-6311565.jpeg"
+                      class="d-block w-100 bossify-carousel-img"
+                      alt="Product image 2"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="https://images.pexels.com/photos/6311587/pexels-photo-6311587.jpeg"
+                      class="d-block w-100 bossify-carousel-img"
+                      alt="Product image 3"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="https://images.pexels.com/photos/6311574/pexels-photo-6311574.jpeg"
+                      class="d-block w-100 bossify-carousel-img"
+                      alt="Product image 4"
+                    />
+                  </div>
+                </div>
+
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#bossifyPdpCarousel"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#bossifyPdpCarousel"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
           </div>
 
-          <div class="footer-col">
-            <h6 class="footer-heading">About</h6>
-            <ul class="footer-links">
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Stores</a></li>
-              <li><a href="#">Sustainability Efforts</a></li>
-              <li><a href="#">Promotions</a></li>
-              <li><a href="#">Careers</a></li>
-            </ul>
-          </div>
+          <!-- RIGHT: Sticky product info -->
+          <div class="col-lg-5">
+            <div class="bossify-pdp-info-wrapper">
+              <div class="bossify-pdp-info bossify-sticky-info">
+                <!-- Breadcrumb -->
+                <nav aria-label="breadcrumb" class="bossify-breadcrumb">
+                  <ol class="breadcrumb mb-3">
+                    <li class="breadcrumb-item">
+                      <a class="bossify-link" href="#">Home</a>
+                    </li>
+                    <li class="breadcrumb-item">
+                      <a class="bossify-link" href="#">Women</a>
+                    </li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      <a class="bossify-link" href="#"
+                        >Drawcord Blouse - Dark Moss</a
+                      >
+                    </li>
+                  </ol>
+                </nav>
 
-          <div class="footer-col">
-            <h6 class="footer-heading">Support</h6>
-            <ul class="footer-links">
-              <li><a href="#">FAQs</a></li>
-              <li><a href="#">Contact Us</a></li>
-            </ul>
-          </div>
+                <h1 class="bossify-pdp-title mb-2">
+                  Drawcord Blouse - Dark Moss
+                </h1>
+                <p class="bossify-pdp-price mb-4">$42.90</p>
 
-          <div class="footer-col">
-            <h6 class="footer-heading">Got a question?</h6>
-            <ul class="footer-links">
-              <li><a href="tel:+6563610068">(+00) 0000 0068</a></li>
-              <li>
-                <a href="mailto:hello@trtconcept.com">hello@bossify.com</a>
-              </li>
-            </ul>
-          </div>
+                <!-- Color -->
+                <div class="bossify-variant-block mb-4">
+                  <div
+                    class="d-flex justify-content-between align-items-center flex-wrap gap-2 mb-2"
+                  >
+                    <span class="bossify-label"
+                      >Colour:
+                      <span class="bossify-strong">Dark Moss</span></span
+                    >
+                    <span class="bossify-sku">SKU: TFBV0001501NW-DMS-XS</span>
+                  </div>
 
-          <div class="footer-col footer-newsletter">
-            <h6 class="footer-heading">Get full updation</h6>
-            <p class="footer-text">
-              Receive the latest updates on our new releases and more.
-            </p>
-            <form class="footer-form">
-              <input type="email" class="footer-input" placeholder="Enter your email" />
-              <button type="submit" class="btn btn-primary-theme">
-                Submit
-              </button>
-            </form>
-            <div class="footer-social">
-              <a href="#" aria-label="Facebook"><i class="ri-facebook-fill"></i></a>
-              <a href="#" aria-label="Instagram"><i class="ri-instagram-line"></i></a>
-              <a href="#" aria-label="Telegram"><i class="ri-telegram-line"></i></a>
+                  <div
+                    class="bossify-swatches"
+                    role="radiogroup"
+                    aria-label="Choose color"
+                  >
+                    <label class="bossify-swatch" title="Dark Moss">
+                      <input type="radio" name="color" checked />
+                      <span
+                        class="bossify-swatch-dot"
+                        style="--swatch: #2f3b33"
+                      ></span>
+                    </label>
+                    <label class="bossify-swatch" title="Stone">
+                      <input type="radio" name="color" />
+                      <span
+                        class="bossify-swatch-dot"
+                        style="--swatch: #d9d7d1"
+                      ></span>
+                    </label>
+                    <label class="bossify-swatch" title="Sand">
+                      <input type="radio" name="color" />
+                      <span
+                        class="bossify-swatch-dot"
+                        style="--swatch: #b99676"
+                      ></span>
+                    </label>
+                  </div>
+                </div>
+
+                <!-- Size -->
+                <div class="bossify-variant-block mb-4">
+                  <div class="bossify-label mb-2">
+                    Size: <span class="bossify-strong">Extra Small</span>
+                  </div>
+
+                  <div
+                    class="bossify-sizes"
+                    role="radiogroup"
+                    aria-label="Choose size"
+                  >
+                    <label class="bossify-size">
+                      <input type="radio" name="size" checked />
+                      <span>XS</span>
+                    </label>
+                    <label class="bossify-size">
+                      <input type="radio" name="size" />
+                      <span>S</span>
+                    </label>
+                    <label class="bossify-size">
+                      <input type="radio" name="size" />
+                      <span>M</span>
+                    </label>
+                    <label class="bossify-size">
+                      <input type="radio" name="size" />
+                      <span>L</span>
+                    </label>
+                  </div>
+                </div>
+
+                <!-- Add to cart + wishlist -->
+                <div
+                  class="bossify-cta-row d-flex gap-2 align-items-stretch mb-5"
+                >
+                  <button
+                    type="button"
+                    class="btn bossify-btn-cart flex-grow-1"
+                  >
+                    ADD TO CART
+                  </button>
+                  <button
+                    type="button"
+                    class="btn bossify-btn-wishlist"
+                    aria-label="Add to wishlist"
+                  >
+                    <span class="bossify-heart">♡</span>
+                  </button>
+                </div>
+
+                <!-- Description -->
+                <div class="bossify-description">
+                  <h3 class="bossify-desc-title">DESCRIPTION</h3>
+                  <p class="bossify-desc-text mb-0">
+                    Embrace versatile, fashion-forward style with this must-have
+                    blouse. Featuring a drawcord waist that allows for
+                    adjustable styling, define your silhouette with a cinched or
+                    relaxed fit.
+                  </p>
+                  <div class="bossify-material mt-4">
+                    <div class="bossify-material-title">100% Cotton</div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
-    <div class="footer-bottom">
-      <div class="main-container footer-bottom-inner">
-        <p class="footer-copy">All rights reserved by Bossify</p>
-        <div class="footer-bottom-links">
-          <a href="#">Terms of Service</a>
-          <a href="#">Privacy Policy</a>
+    <section class="features-strip py-5">
+      <div class="main-container">
+        <div class="row text-center gy-4">
+          <div class="col-6 col-md-6 col-lg-3">
+            <div class="feature-item">
+              <i class="ph-thin ph-truck feature-icon"></i>
+              <h6 class="feature-title text-uppercase mb-2">
+                On-time delivery, every time!
+              </h6>
+              <p class="feature-text mb-0">
+                Enjoy reliable, on-time delivery, you never have to wait to
+                shine in your new look!
+              </p>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-6 col-lg-3">
+            <div class="feature-item">
+              <i class="ph-thin ph-money feature-icon"></i>
+              <h6 class="feature-title text-uppercase mb-2">Value for money</h6>
+              <p class="feature-text mb-0">
+                High quality pieces that deliver amazing value for every penny
+                spent.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-6 col-lg-3">
+            <div class="feature-item">
+              <i class="ph-thin ph-headset feature-icon"></i>
+              <h6 class="feature-title text-uppercase mb-2">
+                Dedicated sales support
+              </h6>
+              <p class="feature-text mb-0">
+                Count on our dedicated sales support team to assist you with
+                every need.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-6 col-lg-3">
+            <div class="feature-item">
+              <i class="ph-thin ph-credit-card feature-icon"></i>
+              <h6 class="feature-title text-uppercase mb-2">Secure payments</h6>
+              <p class="feature-text mb-0">
+                Make payments with peace of mind, knowing your information is
+                fully protected.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </footer>
+    </section>
+    <footer class="site-footer">
+      <div class="footer-top">
+        <div class="main-container">
+          <div class="footer-columns">
+            <div class="footer-col">
+              <h6 class="footer-heading">Shop</h6>
+              <ul class="footer-links">
+                <li><a href="#">Women</a></li>
+                <li><a href="#">Men</a></li>
+                <li><a href="#">Kids</a></li>
+                <li><a href="#">Accessories</a></li>
+                <li><a href="#">Gift Card</a></li>
+              </ul>
+            </div>
 
-  <!-- Back To Top -->
-  <button class="scrollToTopBtn">
-    <i class="ri-arrow-up-line"></i>
-  </button>
+            <div class="footer-col">
+              <h6 class="footer-heading">About</h6>
+              <ul class="footer-links">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Stores</a></li>
+                <li><a href="#">Sustainability Efforts</a></li>
+                <li><a href="#">Promotions</a></li>
+                <li><a href="#">Careers</a></li>
+              </ul>
+            </div>
 
+            <div class="footer-col">
+              <h6 class="footer-heading">Support</h6>
+              <ul class="footer-links">
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Contact Us</a></li>
+              </ul>
+            </div>
 
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/jquery.min.js"></script>
-  <script src="js/gsap.min.js"></script>
-  <script src="js/ScrollTrigger.min.js"></script>
-  <script src="js/lenis.min.js"></script>
-  <script src="js/lenisInstallation.js"></script>
-  <!-- <script src="js/gsapSectionAnimation.js"></script> -->
-  <script src="js/owl.carousel.min.js"></script>
-  <!-- Swiper JS -->
-  <script src="js/swiper-bundle.min.js"></script>
-  <script src="js/owl-custom.js"></script>
-  <script src="js/topContentRotateAnimation.js"></script>
-  <script src="js/mobMenu.js"></script>
-  <script src="js/scroll-to-top.js"></script>
-  <script src="js/headerMegaMenuButtonHover.js"></script>
+            <div class="footer-col">
+              <h6 class="footer-heading">Got a question?</h6>
+              <ul class="footer-links">
+                <li><a href="tel:+6563610068">(+00) 0000 0068</a></li>
+                <li>
+                  <a href="mailto:hello@trtconcept.com">hello@bossify.com</a>
+                </li>
+              </ul>
+            </div>
 
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const links = document.querySelectorAll(".header-links");
-      const darkSections = document.querySelectorAll(".dark-bg");
-      const whiteSections = document.querySelectorAll(".white-bg");
-      const headerHeight = 60;
-      const startScroll = 5; // pixels after which we start managing classes
+            <div class="footer-col footer-newsletter">
+              <h6 class="footer-heading">Get full updation</h6>
+              <p class="footer-text">
+                Receive the latest updates on our new releases and more.
+              </p>
+              <form class="footer-form">
+                <input
+                  type="email"
+                  class="footer-input"
+                  placeholder="Enter your email"
+                />
+                <button type="submit" class="btn btn-primary-theme">
+                  Submit
+                </button>
+              </form>
+              <div class="footer-social">
+                <a href="#" aria-label="Facebook"
+                  ><i class="ri-facebook-fill"></i
+                ></a>
+                <a href="#" aria-label="Instagram"
+                  ><i class="ri-instagram-line"></i
+                ></a>
+                <a href="#" aria-label="Telegram"
+                  ><i class="ri-telegram-line"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-      function isHeaderOver(sections) {
-        let over = false;
-        sections.forEach((section) => {
-          const rect = section.getBoundingClientRect();
-          if (rect.top <= headerHeight && rect.bottom >= headerHeight) {
-            over = true;
-          }
-        });
-        return over;
-      }
+      <div class="footer-bottom">
+        <div class="main-container footer-bottom-inner">
+          <p class="footer-copy">All rights reserved by Bossify</p>
+          <div class="footer-bottom-links">
+            <a href="#">Terms of Service</a>
+            <a href="#">Privacy Policy</a>
+          </div>
+        </div>
+      </div>
+    </footer>
 
-      function updateHeaderLinksColor() {
-        // Before this scroll amount, do NOTHING with classes
-        if (window.scrollY < startScroll) return;
+    <!-- Back To Top -->
+    <button class="scrollToTopBtn">
+      <i class="ri-arrow-up-line"></i>
+    </button>
 
-        const overDark = isHeaderOver(darkSections);
-        const overWhite = isHeaderOver(whiteSections);
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/owl-custom.js"></script>
+    <script src="js/topContentRotateAnimation.js"></script>
+    <script src="js/mobMenu.js"></script>
+    <script src="js/scroll-to-top.js"></script>
+    <script src="js/headerMegaMenuButtonHover.js"></script>
 
-        links.forEach((link) => {
-          link.classList.remove("scrolled-white", "scrolled-black");
-          if (overDark) {
-            link.classList.add("scrolled-white");
-          } else if (overWhite) {
-            link.classList.add("scrolled-black");
-          } else {
-            link.classList.add("scrolled-black");
-          }
-        });
-      }
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const links = document.querySelectorAll(".header-links");
+        const darkSections = document.querySelectorAll(".dark-bg");
+        const whiteSections = document.querySelectorAll(".white-bg");
+        const headerHeight = 60;
+        const startScroll = 5; // pixels after which we start managing classes
 
-      window.addEventListener("scroll", updateHeaderLinksColor);
-    });
-  </script>
+        function isHeaderOver(sections) {
+          let over = false;
+          sections.forEach((section) => {
+            const rect = section.getBoundingClientRect();
+            if (rect.top <= headerHeight && rect.bottom >= headerHeight) {
+              over = true;
+            }
+          });
+          return over;
+        }
 
-  <!-- <script src="js/headerMegaMenu.js"></script> -->
+        function updateHeaderLinksColor() {
+          // Before this scroll amount, do NOTHING with classes
+          if (window.scrollY < startScroll) return;
 
-  <script>
-    const header = document.querySelector("header");
+          const overDark = isHeaderOver(darkSections);
+          const overWhite = isHeaderOver(whiteSections);
 
-    window.addEventListener("scroll", () => {
-      if (window.scrollY > 0) {
-        header.classList.add("head-scrolling");
-      } else {
-        header.classList.remove("head-scrolling");
-      }
-    });
-  </script>
+          links.forEach((link) => {
+            link.classList.remove("scrolled-white", "scrolled-black");
+            if (overDark) {
+              link.classList.add("scrolled-white");
+            } else if (overWhite) {
+              link.classList.add("scrolled-black");
+            } else {
+              link.classList.add("scrolled-black");
+            }
+          });
+        }
 
-</body>
+        window.addEventListener("scroll", updateHeaderLinksColor);
+      });
+    </script>
 
+    <!-- <script src="js/headerMegaMenu.js"></script> -->
+
+    <script>
+      const header = document.querySelector("header");
+
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 0) {
+          header.classList.add("head-scrolling");
+        } else {
+          header.classList.remove("head-scrolling");
+        }
+      });
+    </script>
+  </body>
 </html>
