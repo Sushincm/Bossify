@@ -1651,7 +1651,6 @@ header.head-scrolling .nav-logo img {
   color: #fff;
   padding: 14px 16px;
   letter-spacing: .08em;
-  font-weight: 600;
   border-radius: 8px;
 }
 
@@ -1757,7 +1756,9 @@ position: static !important;
   header.head-scrolling .nav-logo img {
     width: 50px;
   }
-
+  .subpage-header .nav-logo img{
+    width: 50px;
+  }
   .banner {
     margin-top: -20px;
   }
@@ -1921,6 +1922,9 @@ position: static !important;
   .bossify-pdp-title {
   font-size: 1.3rem;
   }
+  .bossify-btn-cart{
+    font-size: .9rem;
+  }
 }
 
 @media (max-width: 768.5px) {
@@ -2070,6 +2074,11 @@ position: static !important;
     font-size: 13px;
     font-weight: 300;
     line-height: 1.1;
+  }
+  .bossify-size span{
+    min-width: 35px;
+    height: 30px;
+    font-size: 14px;
   }
 }
 
