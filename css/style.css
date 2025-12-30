@@ -1690,7 +1690,6 @@ header.head-scrolling .nav-logo img {
   margin-top: 16px;
 }
 
-/* Mobile carousel image */
 .bossify-carousel-img {
   height: 420px;
   object-fit: cover;
@@ -1720,6 +1719,46 @@ position: static !important;
 .subpage-header .top-bar-second{
   background-color: #e2e2e2 !important;
 }
+
+.bossify-desc-material{
+  font-weight: 600;
+  color: #7a7a7a;
+}
+
+.bossify-sizechart th,
+.bossify-sizechart td{
+  padding: 16px 14px;
+  text-align: center;
+  vertical-align: middle;
+  color: #666;
+}
+
+.bossify-sizechart tbody th{
+  text-align: left;
+  font-weight: 400;
+  color: #777;
+  width: 32%;
+}
+
+.bossify-desc-note{
+  color: #7a7a7a;
+  line-height: 1.6;
+}
+
+.bossify-desc-subtitle{
+  font-size: 1rem;
+  letter-spacing: .08em;
+  font-weight: 700;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.bossify-desc-sku{
+  font-weight: 700;
+  color: #777;
+}
+
+
 /* responsive */
 @media (max-width: 992px) {
   .footer-columns {
