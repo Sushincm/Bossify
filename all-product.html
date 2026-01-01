@@ -1,602 +1,725 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bossify</title>
-    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/thin/style.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
-    />
-    <!-- Owl-carousel -->
-    <link rel="stylesheet" href="css/owl.carousel.min.css" />
-    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
-    <!-- Swiper CSS -->
-    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
 
-  <body>
-    <header class="top-bar position-fixed w-100 subpage-header">
-      <!-- Mega menu Buttons Hover -->
-      <div id="megaMenu" class="mega-menu">
-        <div class="container-fluid h-100">
-          <div class="row h-100">
-            <!-- Left: columns -->
-            <div class="col-lg-8 mega-columns">
-              <!-- MEN -->
-              <div class="mega-panel" data-menu="men">
-                <div class="row">
-                  <div class="col-3">
-                    <h6 class="mega-title">New Arrivals</h6>
-                    <a href="#" class="mega-link">All New In</a>
-                  </div>
-                  <div class="col-3">
-                    <h6 class="mega-title">Tops</h6>
-                    <a href="#" class="mega-link">Blouses</a>
-                    <a href="#" class="mega-link">Knits</a>
-                    <a href="#" class="mega-link">Tees</a>
-                  </div>
-                  <div class="col-3">
-                    <h6 class="mega-title">Bottoms</h6>
-                    <a href="#" class="mega-link">Jeans</a>
-                    <a href="#" class="mega-link">Pants</a>
-                    <a href="#" class="mega-link">Shorts</a>
-                  </div>
-                  <div class="col-3">
-                    <h6 class="mega-title">Outerwear</h6>
-                    <a href="#" class="mega-link">Jackets</a>
-                    <a href="#" class="mega-link">Coats</a>
-                  </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bossify</title>
+  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/thin/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.8.1/nouislider.css" />
+  <!-- Owl-carousel -->
+  <link rel="stylesheet" href="css/owl.carousel.min.css" />
+  <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <header class="top-bar position-fixed w-100 subpage-header">
+    <!-- Mega menu Buttons Hover -->
+    <div id="megaMenu" class="mega-menu">
+      <div class="container-fluid h-100">
+        <div class="row h-100">
+          <!-- Left: columns -->
+          <div class="col-lg-8 mega-columns">
+            <!-- MEN -->
+            <div class="mega-panel" data-menu="men">
+              <div class="row">
+                <div class="col-3">
+                  <h6 class="mega-title">New Arrivals</h6>
+                  <a href="#" class="mega-link">All New In</a>
                 </div>
-              </div>
-
-              <!-- WOMEN -->
-              <div class="mega-panel" data-menu="women">
-                <div class="row">
-                  <div class="col-3">
-                    <h6 class="mega-title">New Arrivals</h6>
-                    <a href="#" class="mega-link">All New In</a>
-                  </div>
-                  <div class="col-3">
-                    <h6 class="mega-title">Tops</h6>
-                    <a href="#" class="mega-link">Blouses</a>
-                    <a href="#" class="mega-link">Knits</a>
-                    <a href="#" class="mega-link">Tees</a>
-                  </div>
+                <div class="col-3">
+                  <h6 class="mega-title">Tops</h6>
+                  <a href="#" class="mega-link">Blouses</a>
+                  <a href="#" class="mega-link">Knits</a>
+                  <a href="#" class="mega-link">Tees</a>
                 </div>
-              </div>
-
-              <!-- KIDS -->
-              <div class="mega-panel" data-menu="kids">
-                <div class="row">
-                  <div class="col-3">
-                    <h6 class="mega-title">New Arrivals</h6>
-                    <a href="#" class="mega-link">All New In</a>
-                  </div>
-                  <div class="col-3">
-                    <h6 class="mega-title">Tops</h6>
-                    <a href="#" class="mega-link">Blouses</a>
-                    <a href="#" class="mega-link">Knits</a>
-                    <a href="#" class="mega-link">Tees</a>
-                  </div>
+                <div class="col-3">
+                  <h6 class="mega-title">Bottoms</h6>
+                  <a href="#" class="mega-link">Jeans</a>
+                  <a href="#" class="mega-link">Pants</a>
+                  <a href="#" class="mega-link">Shorts</a>
                 </div>
-              </div>
-
-              <!-- SALE -->
-              <div class="mega-panel" data-menu="sale">
-                <div class="row">
-                  <div class="col-3">
-                    <h6 class="mega-title">New Arrivals</h6>
-                    <a href="#" class="mega-link">All New In</a>
-                  </div>
-                  <div class="col-3">
-                    <h6 class="mega-title">Tops</h6>
-                    <a href="#" class="mega-link">Blouses</a>
-                    <a href="#" class="mega-link">Knits</a>
-                    <a href="#" class="mega-link">Tees</a>
-                  </div>
-                </div>
-              </div>
-
-              <!-- BRANDS -->
-              <div class="mega-panel" data-menu="brands">
-                <div class="row">
-                  <div class="col-3">
-                    <h6 class="mega-title">New Arrivals</h6>
-                    <a href="#" class="mega-link">All New In</a>
-                  </div>
-                  <div class="col-3">
-                    <h6 class="mega-title">Tops</h6>
-                    <a href="#" class="mega-link">Blouses</a>
-                    <a href="#" class="mega-link">Knits</a>
-                    <a href="#" class="mega-link">Tees</a>
-                  </div>
+                <div class="col-3">
+                  <h6 class="mega-title">Outerwear</h6>
+                  <a href="#" class="mega-link">Jackets</a>
+                  <a href="#" class="mega-link">Coats</a>
                 </div>
               </div>
             </div>
 
-            <!-- Right: image / promo -->
-            <div class="col-lg-4 mega-media d-none d-lg-block">
-              <div class="mega-media-inner">
-                <img
-                  src="https://images.pexels.com/photos/994523/pexels-photo-994523.jpeg"
-                  alt="New in"
-                  class="img-fluid w-100 h-100 object-fit-cover"
-                />
-                <button class="mega-cta">
-                  NEW IN WOMEN
-                  <i class="ri-arrow-right-line"></i>
-                </button>
+            <!-- WOMEN -->
+            <div class="mega-panel" data-menu="women">
+              <div class="row">
+                <div class="col-3">
+                  <h6 class="mega-title">New Arrivals</h6>
+                  <a href="#" class="mega-link">All New In</a>
+                </div>
+                <div class="col-3">
+                  <h6 class="mega-title">Tops</h6>
+                  <a href="#" class="mega-link">Blouses</a>
+                  <a href="#" class="mega-link">Knits</a>
+                  <a href="#" class="mega-link">Tees</a>
+                </div>
               </div>
+            </div>
+
+            <!-- KIDS -->
+            <div class="mega-panel" data-menu="kids">
+              <div class="row">
+                <div class="col-3">
+                  <h6 class="mega-title">New Arrivals</h6>
+                  <a href="#" class="mega-link">All New In</a>
+                </div>
+                <div class="col-3">
+                  <h6 class="mega-title">Tops</h6>
+                  <a href="#" class="mega-link">Blouses</a>
+                  <a href="#" class="mega-link">Knits</a>
+                  <a href="#" class="mega-link">Tees</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- SALE -->
+            <div class="mega-panel" data-menu="sale">
+              <div class="row">
+                <div class="col-3">
+                  <h6 class="mega-title">New Arrivals</h6>
+                  <a href="#" class="mega-link">All New In</a>
+                </div>
+                <div class="col-3">
+                  <h6 class="mega-title">Tops</h6>
+                  <a href="#" class="mega-link">Blouses</a>
+                  <a href="#" class="mega-link">Knits</a>
+                  <a href="#" class="mega-link">Tees</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- BRANDS -->
+            <div class="mega-panel" data-menu="brands">
+              <div class="row">
+                <div class="col-3">
+                  <h6 class="mega-title">New Arrivals</h6>
+                  <a href="#" class="mega-link">All New In</a>
+                </div>
+                <div class="col-3">
+                  <h6 class="mega-title">Tops</h6>
+                  <a href="#" class="mega-link">Blouses</a>
+                  <a href="#" class="mega-link">Knits</a>
+                  <a href="#" class="mega-link">Tees</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: image / promo -->
+          <div class="col-lg-4 mega-media d-none d-lg-block">
+            <div class="mega-media-inner">
+              <img src="https://images.pexels.com/photos/994523/pexels-photo-994523.jpeg" alt="New in"
+                class="img-fluid w-100 h-100 object-fit-cover" />
+              <button class="mega-cta">
+                NEW IN WOMEN
+                <i class="ri-arrow-right-line"></i>
+              </button>
             </div>
           </div>
         </div>
       </div>
+    </div>
 
-      <div class="top-bar-inner top-bar-gap">
+    <div class="top-bar-inner top-bar-gap">
+      <div class="main-container">
+        Free home delivery on order worth ₹699 and above
+      </div>
+    </div>
+
+    <div class="top-bar-gap bg-light top-bar-second">
+      <div class="top-bar-right text-center">
         <div class="main-container">
-          Free home delivery on order worth ₹699 and above
-        </div>
-      </div>
-
-      <div class="top-bar-gap bg-light top-bar-second">
-        <div class="top-bar-right text-center">
-          <div class="main-container">
-            <div class="top-bar-rotator" id="topBarRotator">
-              <div class="top-bar-message">
-                Exceptional Customer Service @ 000 000 00000
-              </div>
-              <div class="top-bar-message">
-                No question asked return within 30 days
-              </div>
-              <div class="top-bar-message">
-                Free alterations on all ethnic wear
-              </div>
+          <div class="top-bar-rotator" id="topBarRotator">
+            <div class="top-bar-message">
+              Exceptional Customer Service @ 000 000 00000
+            </div>
+            <div class="top-bar-message">
+              No question asked return within 30 days
+            </div>
+            <div class="top-bar-message">
+              Free alterations on all ethnic wear
             </div>
           </div>
         </div>
       </div>
+    </div>
 
-      <!-- Main header -->
-      <div
-        class="d-flex align-items-center justify-content-between header-content"
-      >
-        <div class="nav-links d-flex align-items-center gap-3">
-          <button
-            class="top-link header-links d-none d-lg-flex"
-            data-menu="men"
-          >
-            Men
-          </button>
-          <button
-            class="top-link header-links d-none d-lg-flex"
-            data-menu="women"
-          >
-            Women
-          </button>
-          <button
-            class="top-link header-links d-none d-lg-flex"
-            data-menu="kids"
-          >
-            Kids
-          </button>
-          <button
-            class="top-link header-links d-none d-lg-flex"
-            data-menu="sale"
-          >
-            Sale
-          </button>
-          <button
-            class="top-link header-links d-none d-lg-flex"
-            data-menu="brands"
-          >
-            Brands
-          </button>
-          <!-- mobile -->
-          <button
-            class="humbrug d-block d-lg-none nav-left-icons p-0 header-links"
-          >
-            <i class="ph-thin ph-list"></i>
-          </button>
-          <button
-            class="search-mob-nav d-block d-lg-none nav-left-icons p-0 header-links"
-          >
+    <!-- Main header -->
+    <div class="d-flex align-items-center justify-content-between header-content">
+      <div class="nav-links d-flex align-items-center gap-3">
+        <button class="top-link header-links d-none d-lg-flex" data-menu="men">
+          Men
+        </button>
+        <button class="top-link header-links d-none d-lg-flex" data-menu="women">
+          Women
+        </button>
+        <button class="top-link header-links d-none d-lg-flex" data-menu="kids">
+          Kids
+        </button>
+        <button class="top-link header-links d-none d-lg-flex" data-menu="sale">
+          Sale
+        </button>
+        <button class="top-link header-links d-none d-lg-flex" data-menu="brands">
+          Brands
+        </button>
+        <!-- mobile -->
+        <button class="humbrug d-block d-lg-none nav-left-icons p-0 header-links">
+          <i class="ph-thin ph-list"></i>
+        </button>
+        <button class="search-mob-nav d-block d-lg-none nav-left-icons p-0 header-links">
+          <i class="ph-thin ph-magnifying-glass"></i>
+        </button>
+      </div>
+      <div class="nav-logo">
+        <a href="index.html">
+          <img src="images/Bossify-Logo.svg" />
+        </a>
+      </div>
+      <div class="nav-right d-flex align-items-center gap-3">
+        <div class="search-nav d-none d-lg-block">
+          <button class="header-links search-button-nav" id="searchDesktopBtn">
             <i class="ph-thin ph-magnifying-glass"></i>
+            Search
           </button>
         </div>
-        <div class="nav-logo">
-          <a href="index.html">
-            <img src="images/Bossify-Logo.svg" />
+        <div class="d-block d-lg-none"></div>
+        <a href="#" class="header-links"><i class="ph-thin ph-user"></i></a>
+        <a href="#" class="header-links d-none d-lg-block"><i class="ph-thin ph-heart-straight"></i></a>
+        <a href="#" class="header-links"><i class="ph-thin ph-shopping-bag"></i></a>
+      </div>
+    </div>
+  </header>
+  <!-- Mobile full-screen menu -->
+  <div class="mobile-menu-overlay d-flex d-lg-none" id="mobileMenu">
+    <div class="mobile-menu-header">
+      <div class="mobile-menu-tabs">
+        <button class="mobile-tab active" data-tab="men">Men</button>
+        <button class="mobile-tab" data-tab="women">Women</button>
+        <button class="mobile-tab" data-tab="kids">Kids</button>
+        <button class="mobile-tab" data-tab="sale">Sale</button>
+        <button class="mobile-tab" data-tab="brands">Brands</button>
+      </div>
+      <button class="mobile-menu-close" id="mobileMenuClose">
+        <i class="ph-thin ph-x"></i>
+      </button>
+    </div>
+
+    <div class="mobile-menu-body">
+      <!-- Left column example for MEN -->
+      <div class="mobile-menu-panel active" data-panel="men">
+        <ul class="mobile-menu-list">
+          <li><a href="#">New &amp; Trending</a></li>
+          <li><a href="#">Shoes</a></li>
+          <li><a href="#">Accessories</a></li>
+          <li><a href="#">Apparels</a></li>
+          <li><a href="#">Brands</a></li>
+          <li><a href="#">% Sale</a></li>
+        </ul>
+      </div>
+
+      <!-- other panels (Women / Kids / Sale / Brands) -->
+      <div class="mobile-menu-panel" data-panel="women">
+        <ul class="mobile-menu-list">
+          <li><a href="#">New In</a></li>
+          <li><a href="#">Sarees</a></li>
+          <li><a href="#">Salwar Suits</a></li>
+          <li><a href="#">Kurta Sets</a></li>
+        </ul>
+      </div>
+
+      <!-- repeat as needed for kids, sale, brands -->
+    </div>
+
+    <div class="mobile-menu-footer">
+      <a href="#"><i class="ph-thin ph-cube"></i> Track your order</a>
+      <a href="#"><i class="ph-thin ph-phone"></i> Contact</a>
+      <a href="#"><i class="ph-thin ph-chat-circle-dots"></i> Chat with us</a>
+      <a href="#"><i class="ph-thin ph-user"></i> My Account</a>
+      <a href="#"><i class="ph-thin ph-heart-straight"></i> Wishlist</a>
+    </div>
+  </div>
+
+  <!-- Mobile search overlay -->
+  <div class="search-overlay" id="searchOverlay">
+    <div class="search-overlay-header">
+      <div class="search-input-wrap">
+        <i class="ph ph-magnifying-glass"></i>
+        <input type="text" id="searchInput" placeholder="Search" autocomplete="off" />
+      </div>
+      <button class="search-overlay-close" id="searchOverlayClose">
+        <i class="ph-thin ph-x"></i>
+      </button>
+    </div>
+
+    <div class="search-overlay-body">
+      <p class="search-section-title">Suggested products</p>
+
+      <div class="search-results-scroll">
+        <div class="search-grid">
+          <a href="#" class="search-card">
+            <div class="search-card-img">
+              <img src="images/arrivals-2.webp" alt="Product 1" />
+            </div>
+            <div class="search-card-info">
+              <span class="search-card-brand">Brand name</span>
+              <span class="search-card-name">Product title</span>
+              <span class="search-card-price">₹ 4,999.00</span>
+            </div>
+          </a>
+
+          <a href="#" class="search-card">
+            <div class="search-card-img">
+              <img src="images/arrivals-1.webp" alt="Product 2" />
+            </div>
+            <div class="search-card-info">
+              <span class="search-card-brand">Brand name</span>
+              <span class="search-card-name">Product title</span>
+              <span class="search-card-price">₹ 3,999.00</span>
+            </div>
+          </a>
+
+          <a href="#" class="search-card">
+            <div class="search-card-img">
+              <img src="images/arrivals-3.webp" alt="Product 1" />
+            </div>
+            <div class="search-card-info">
+              <span class="search-card-brand">Brand name</span>
+              <span class="search-card-name">Product title</span>
+              <span class="search-card-price">₹ 4,999.00</span>
+            </div>
+          </a>
+
+          <a href="#" class="search-card">
+            <div class="search-card-img">
+              <img src="images/arrivals-2.webp" alt="Product 1" />
+            </div>
+            <div class="search-card-info">
+              <span class="search-card-brand">Brand name</span>
+              <span class="search-card-name">Product title</span>
+              <span class="search-card-price">₹ 4,999.00</span>
+            </div>
+          </a>
+
+          <a href="#" class="search-card">
+            <div class="search-card-img">
+              <img src="images/arrivals-1.webp" alt="Product 2" />
+            </div>
+            <div class="search-card-info">
+              <span class="search-card-brand">Brand name</span>
+              <span class="search-card-name">Product title</span>
+              <span class="search-card-price">₹ 3,999.00</span>
+            </div>
+          </a>
+
+          <a href="#" class="search-card">
+            <div class="search-card-img">
+              <img src="images/arrivals-3.webp" alt="Product 1" />
+            </div>
+            <div class="search-card-info">
+              <span class="search-card-brand">Brand name</span>
+              <span class="search-card-name">Product title</span>
+              <span class="search-card-price">₹ 4,999.00</span>
+            </div>
           </a>
         </div>
-        <div class="nav-right d-flex align-items-center gap-3">
-          <div class="search-nav d-none d-lg-block">
-            <button
-              class="header-links search-button-nav"
-              id="searchDesktopBtn"
-            >
-              <i class="ph-thin ph-magnifying-glass"></i>
-              Search
-            </button>
-          </div>
-          <div class="d-block d-lg-none"></div>
-          <a href="#" class="header-links"><i class="ph-thin ph-user"></i></a>
-          <a href="#" class="header-links d-none d-lg-block"
-            ><i class="ph-thin ph-heart-straight"></i
-          ></a>
-          <a href="#" class="header-links"
-            ><i class="ph-thin ph-shopping-bag"></i
-          ></a>
-        </div>
-      </div>
-    </header>
-    <!-- Mobile full-screen menu -->
-    <div class="mobile-menu-overlay d-flex d-lg-none" id="mobileMenu">
-      <div class="mobile-menu-header">
-        <div class="mobile-menu-tabs">
-          <button class="mobile-tab active" data-tab="men">Men</button>
-          <button class="mobile-tab" data-tab="women">Women</button>
-          <button class="mobile-tab" data-tab="kids">Kids</button>
-          <button class="mobile-tab" data-tab="sale">Sale</button>
-          <button class="mobile-tab" data-tab="brands">Brands</button>
-        </div>
-        <button class="mobile-menu-close" id="mobileMenuClose">
-          <i class="ph-thin ph-x"></i>
-        </button>
-      </div>
-
-      <div class="mobile-menu-body">
-        <!-- Left column example for MEN -->
-        <div class="mobile-menu-panel active" data-panel="men">
-          <ul class="mobile-menu-list">
-            <li><a href="#">New &amp; Trending</a></li>
-            <li><a href="#">Shoes</a></li>
-            <li><a href="#">Accessories</a></li>
-            <li><a href="#">Apparels</a></li>
-            <li><a href="#">Brands</a></li>
-            <li><a href="#">% Sale</a></li>
-          </ul>
-        </div>
-
-        <!-- other panels (Women / Kids / Sale / Brands) -->
-        <div class="mobile-menu-panel" data-panel="women">
-          <ul class="mobile-menu-list">
-            <li><a href="#">New In</a></li>
-            <li><a href="#">Sarees</a></li>
-            <li><a href="#">Salwar Suits</a></li>
-            <li><a href="#">Kurta Sets</a></li>
-          </ul>
-        </div>
-
-        <!-- repeat as needed for kids, sale, brands -->
-      </div>
-
-      <div class="mobile-menu-footer">
-        <a href="#"><i class="ph-thin ph-cube"></i> Track your order</a>
-        <a href="#"><i class="ph-thin ph-phone"></i> Contact</a>
-        <a href="#"><i class="ph-thin ph-chat-circle-dots"></i> Chat with us</a>
-        <a href="#"><i class="ph-thin ph-user"></i> My Account</a>
-        <a href="#"><i class="ph-thin ph-heart-straight"></i> Wishlist</a>
       </div>
     </div>
+  </div>
 
-    <!-- Mobile search overlay -->
-    <div class="search-overlay" id="searchOverlay">
-      <div class="search-overlay-header">
-        <div class="search-input-wrap">
-          <i class="ph ph-magnifying-glass"></i>
-          <input
-            type="text"
-            id="searchInput"
-            placeholder="Search"
-            autocomplete="off"
-          />
+  <section class="bossify-plp py-4">
+    <div class="row g-4">
+      <!-- LEFT FILTERS -->
+      <aside class="col-lg-3 bossify-filter">
+        <div class="bossify-filter-card">
+          <!-- Categories -->
+          <div class="bossify-filter-block">
+            <h5 class="bossify-filter-title">Categories</h5>
+            <div class="bossify-filter-list bossify-scrollbox">
+              <label class="bossify-check">
+                <input type="checkbox" class="bossify-check-input" value="anarkali" />
+                <span class="bossify-check-label">Anarkali Set <small>(1)</small></span>
+              </label>
+
+              <label class="bossify-check">
+                <input type="checkbox" class="bossify-check-input" value="banarasi-saree" />
+                <span class="bossify-check-label">Banarasi Saree <small>(19)</small></span>
+              </label>
+
+              <label class="bossify-check">
+                <input type="checkbox" class="bossify-check-input" value="banarasi-silk" />
+                <span class="bossify-check-label">Banarasi Silk <small>(8)</small></span>
+              </label>
+            </div>
+          </div>
+
+          <hr class="bossify-hr" />
+
+          <!-- Collections -->
+          <div class="bossify-filter-block">
+            <h5 class="bossify-filter-title">Collections</h5>
+            <div class="bossify-filter-list bossify-scrollbox">
+              <label class="bossify-check">
+                <input type="checkbox" class="bossify-check-input" value="kanchipuram-silk-1" />
+                <span class="bossify-check-label">Kanchipuram Silk <small>(10)</small></span>
+              </label>
+
+              <label class="bossify-check">
+                <input type="checkbox" class="bossify-check-input" value="kanchipuram-silk-2" />
+                <span class="bossify-check-label">Kanchipuram Silk <small>(9)</small></span>
+              </label>
+
+              <label class="bossify-check">
+                <input type="checkbox" class="bossify-check-input" value="kanchipuram-soft" />
+                <span class="bossify-check-label">Kanchipuram Soft <small>(3)</small></span>
+              </label>
+            </div>
+          </div>
+
+          <hr class="bossify-hr" />
+
+          <!-- Price Range -->
+          <div class="bossify-filter-block">
+            <h5 class="bossify-filter-title">Price Range</h5>
+
+            <div id="bossifyPriceSlider" class="bossify-price-slider"></div>
+
+            <div class="bossify-price-values mt-3">
+              <div class="bossify-price-min">
+                ₹ <span id="bossifyMinPrice">0</span>
+              </div>
+              <div class="bossify-price-max">
+                ₹ <span id="bossifyMaxPrice">100000</span>
+              </div>
+            </div>
+          </div>
+
+          <hr class="bossify-hr" />
+
+          <!-- Sizes -->
+          <div class="bossify-filter-block">
+            <h5 class="bossify-filter-title">Sizes</h5>
+            <div class="bossify-filter-list bossify-scrollbox">
+              <label class="bossify-check">
+                <input type="checkbox" class="bossify-check-input" value="0" />
+                <span class="bossify-check-label">0 <small>(1)</small></span>
+              </label>
+
+              <label class="bossify-check">
+                <input type="checkbox" class="bossify-check-input" value="2" />
+                <span class="bossify-check-label">2 <small>(1)</small></span>
+              </label>
+
+              <label class="bossify-check">
+                <input type="checkbox" class="bossify-check-input" value="4" />
+                <span class="bossify-check-label">4 <small>(1)</small></span>
+              </label>
+            </div>
+          </div>
         </div>
-        <button class="search-overlay-close" id="searchOverlayClose">
-          <i class="ph-thin ph-x"></i>
-        </button>
-      </div>
+      </aside>
 
-      <div class="search-overlay-body">
-        <p class="search-section-title">Suggested products</p>
+      <!-- RIGHT PRODUCTS -->
+      <div class="col-lg-9">
+        <!-- Top bar -->
+        <div class="bossify-plp-top d-flex justify-content-between align-items-center mb-3">
+          <h4 class="bossify-plp-heading mb-0">WOMEN’S SWEATERS</h4>
 
-        <div class="search-results-scroll">
-          <div class="search-grid">
-            <a href="#" class="search-card">
-              <div class="search-card-img">
-                <img src="images/arrivals-2.webp" alt="Product 1" />
-              </div>
-              <div class="search-card-info">
-                <span class="search-card-brand">Brand name</span>
-                <span class="search-card-name">Product title</span>
-                <span class="search-card-price">₹ 4,999.00</span>
-              </div>
-            </a>
+          <button class="bossify-filter-btn" type="button">
+            <span class="bossify-filter-btn-text">Filter</span>
+            <i class="ri-equalizer-line"></i>
+          </button>
+        </div>
 
-            <a href="#" class="search-card">
-              <div class="search-card-img">
-                <img src="images/arrivals-1.webp" alt="Product 2" />
+        <!-- Products grid -->
+        <div class="row g-3 row-cols-2 row-cols-md-2 row-cols-lg-3 bossify-products">
+          <!-- Product -->
+          <div class="col">
+            <a href="product-1.html" class="bossify-product-card text-decoration-none d-block">
+              <div class="bossify-product-img">
+                <img src="https://images.pexels.com/photos/6311570/pexels-photo-6311570.jpeg"
+                  alt="Signature Cashmere V-Neck" />
               </div>
-              <div class="search-card-info">
-                <span class="search-card-brand">Brand name</span>
-                <span class="search-card-name">Product title</span>
-                <span class="search-card-price">₹ 3,999.00</span>
-              </div>
-            </a>
-
-            <a href="#" class="search-card">
-              <div class="search-card-img">
-                <img src="images/arrivals-3.webp" alt="Product 1" />
-              </div>
-              <div class="search-card-info">
-                <span class="search-card-brand">Brand name</span>
-                <span class="search-card-name">Product title</span>
-                <span class="search-card-price">₹ 4,999.00</span>
-              </div>
-            </a>
-
-            <a href="#" class="search-card">
-              <div class="search-card-img">
-                <img src="images/arrivals-2.webp" alt="Product 1" />
-              </div>
-              <div class="search-card-info">
-                <span class="search-card-brand">Brand name</span>
-                <span class="search-card-name">Product title</span>
-                <span class="search-card-price">₹ 4,999.00</span>
-              </div>
-            </a>
-
-            <a href="#" class="search-card">
-              <div class="search-card-img">
-                <img src="images/arrivals-1.webp" alt="Product 2" />
-              </div>
-              <div class="search-card-info">
-                <span class="search-card-brand">Brand name</span>
-                <span class="search-card-name">Product title</span>
-                <span class="search-card-price">₹ 3,999.00</span>
-              </div>
-            </a>
-
-            <a href="#" class="search-card">
-              <div class="search-card-img">
-                <img src="images/arrivals-3.webp" alt="Product 1" />
-              </div>
-              <div class="search-card-info">
-                <span class="search-card-brand">Brand name</span>
-                <span class="search-card-name">Product title</span>
-                <span class="search-card-price">₹ 4,999.00</span>
+              <div class="bossify-product-meta">
+                <div class="bossify-product-name">
+                  SIGNATURE CASHMERE V-NECK
+                </div>
+                <div class="bossify-product-price">$550</div>
+                <div class="bossify-product-swatches">
+                  <span class="bossify-swatch-dot" style="--dot: #0b1930"></span>
+                  <span class="bossify-swatch-dot" style="--dot: #e7e1d6"></span>
+                  <span class="bossify-swatch-dot" style="--dot: #000"></span>
+                </div>
               </div>
             </a>
           </div>
+
+          <div class="col">
+            <a href="product-2.html" class="bossify-product-card text-decoration-none d-block">
+              <div class="bossify-product-img">
+                <img src="https://images.pexels.com/photos/6311565/pexels-photo-6311565.jpeg"
+                  alt="Signature Cashmere V-Neck" />
+              </div>
+              <div class="bossify-product-meta">
+                <div class="bossify-product-name">
+                  SIGNATURE CASHMERE V-NECK
+                </div>
+                <div class="bossify-product-price">$550</div>
+                <div class="bossify-product-swatches">
+                  <span class="bossify-swatch-dot" style="--dot: #e7e1d6"></span>
+                  <span class="bossify-swatch-dot" style="--dot: #9a9a9a"></span>
+                  <span class="bossify-swatch-dot" style="--dot: #000"></span>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col">
+            <a href="product-3.html" class="bossify-product-card text-decoration-none d-block">
+              <div class="bossify-product-img">
+                <img src="https://images.pexels.com/photos/6311587/pexels-photo-6311587.jpeg"
+                  alt="Signature Cashmere V-Neck" />
+              </div>
+              <div class="bossify-product-meta">
+                <div class="bossify-product-name">
+                  SIGNATURE CASHMERE V-NECK
+                </div>
+                <div class="bossify-product-price">$550</div>
+                <div class="bossify-product-swatches">
+                  <span class="bossify-swatch-dot" style="--dot: #000"></span>
+                  <span class="bossify-swatch-dot" style="--dot: #e7e1d6"></span>
+                  <span class="bossify-swatch-dot" style="--dot: #1b2a3a"></span>
+                </div>
+              </div>
+            </a>
+          </div>
         </div>
       </div>
     </div>
+    </div>
+  </section>
 
- 
+  <section class="features-strip py-5">
+    <div class="main-container">
+      <div class="row text-center gy-4">
+        <div class="col-6 col-md-6 col-lg-3">
+          <div class="feature-item">
+            <i class="ph-thin ph-truck feature-icon"></i>
+            <h6 class="feature-title text-uppercase mb-2">
+              On-time delivery, every time!
+            </h6>
+            <p class="feature-text mb-0">
+              Enjoy reliable, on-time delivery, you never have to wait to
+              shine in your new look!
+            </p>
+          </div>
+        </div>
 
-    <section class="features-strip py-5">
+        <div class="col-6 col-md-6 col-lg-3">
+          <div class="feature-item">
+            <i class="ph-thin ph-money feature-icon"></i>
+            <h6 class="feature-title text-uppercase mb-2">Value for money</h6>
+            <p class="feature-text mb-0">
+              High quality pieces that deliver amazing value for every penny
+              spent.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-6 col-lg-3">
+          <div class="feature-item">
+            <i class="ph-thin ph-headset feature-icon"></i>
+            <h6 class="feature-title text-uppercase mb-2">
+              Dedicated sales support
+            </h6>
+            <p class="feature-text mb-0">
+              Count on our dedicated sales support team to assist you with
+              every need.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-6 col-lg-3">
+          <div class="feature-item">
+            <i class="ph-thin ph-credit-card feature-icon"></i>
+            <h6 class="feature-title text-uppercase mb-2">Secure payments</h6>
+            <p class="feature-text mb-0">
+              Make payments with peace of mind, knowing your information is
+              fully protected.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="site-footer">
+    <div class="footer-top">
       <div class="main-container">
-        <div class="row text-center gy-4">
-          <div class="col-6 col-md-6 col-lg-3">
-            <div class="feature-item">
-              <i class="ph-thin ph-truck feature-icon"></i>
-              <h6 class="feature-title text-uppercase mb-2">
-                On-time delivery, every time!
-              </h6>
-              <p class="feature-text mb-0">
-                Enjoy reliable, on-time delivery, you never have to wait to
-                shine in your new look!
-              </p>
-            </div>
+        <div class="footer-columns">
+          <div class="footer-col">
+            <h6 class="footer-heading">Shop</h6>
+            <ul class="footer-links">
+              <li><a href="#">Women</a></li>
+              <li><a href="#">Men</a></li>
+              <li><a href="#">Kids</a></li>
+              <li><a href="#">Accessories</a></li>
+              <li><a href="#">Gift Card</a></li>
+            </ul>
           </div>
 
-          <div class="col-6 col-md-6 col-lg-3">
-            <div class="feature-item">
-              <i class="ph-thin ph-money feature-icon"></i>
-              <h6 class="feature-title text-uppercase mb-2">Value for money</h6>
-              <p class="feature-text mb-0">
-                High quality pieces that deliver amazing value for every penny
-                spent.
-              </p>
-            </div>
+          <div class="footer-col">
+            <h6 class="footer-heading">About</h6>
+            <ul class="footer-links">
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Stores</a></li>
+              <li><a href="#">Sustainability Efforts</a></li>
+              <li><a href="#">Promotions</a></li>
+              <li><a href="#">Careers</a></li>
+            </ul>
           </div>
 
-          <div class="col-6 col-md-6 col-lg-3">
-            <div class="feature-item">
-              <i class="ph-thin ph-headset feature-icon"></i>
-              <h6 class="feature-title text-uppercase mb-2">
-                Dedicated sales support
-              </h6>
-              <p class="feature-text mb-0">
-                Count on our dedicated sales support team to assist you with
-                every need.
-              </p>
-            </div>
+          <div class="footer-col">
+            <h6 class="footer-heading">Support</h6>
+            <ul class="footer-links">
+              <li><a href="#">FAQs</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
           </div>
 
-          <div class="col-6 col-md-6 col-lg-3">
-            <div class="feature-item">
-              <i class="ph-thin ph-credit-card feature-icon"></i>
-              <h6 class="feature-title text-uppercase mb-2">Secure payments</h6>
-              <p class="feature-text mb-0">
-                Make payments with peace of mind, knowing your information is
-                fully protected.
-              </p>
-            </div>
+          <div class="footer-col">
+            <h6 class="footer-heading">Got a question?</h6>
+            <ul class="footer-links">
+              <li><a href="tel:+6563610068">(+00) 0000 0068</a></li>
+              <li>
+                <a href="mailto:hello@trtconcept.com">hello@bossify.com</a>
+              </li>
+            </ul>
           </div>
-        </div>
-      </div>
-    </section>
-    <footer class="site-footer">
-      <div class="footer-top">
-        <div class="main-container">
-          <div class="footer-columns">
-            <div class="footer-col">
-              <h6 class="footer-heading">Shop</h6>
-              <ul class="footer-links">
-                <li><a href="#">Women</a></li>
-                <li><a href="#">Men</a></li>
-                <li><a href="#">Kids</a></li>
-                <li><a href="#">Accessories</a></li>
-                <li><a href="#">Gift Card</a></li>
-              </ul>
-            </div>
 
-            <div class="footer-col">
-              <h6 class="footer-heading">About</h6>
-              <ul class="footer-links">
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Stores</a></li>
-                <li><a href="#">Sustainability Efforts</a></li>
-                <li><a href="#">Promotions</a></li>
-                <li><a href="#">Careers</a></li>
-              </ul>
-            </div>
-
-            <div class="footer-col">
-              <h6 class="footer-heading">Support</h6>
-              <ul class="footer-links">
-                <li><a href="#">FAQs</a></li>
-                <li><a href="#">Contact Us</a></li>
-              </ul>
-            </div>
-
-            <div class="footer-col">
-              <h6 class="footer-heading">Got a question?</h6>
-              <ul class="footer-links">
-                <li><a href="tel:+6563610068">(+00) 0000 0068</a></li>
-                <li>
-                  <a href="mailto:hello@trtconcept.com">hello@bossify.com</a>
-                </li>
-              </ul>
-            </div>
-
-            <div class="footer-col footer-newsletter">
-              <h6 class="footer-heading">Get full updation</h6>
-              <p class="footer-text">
-                Receive the latest updates on our new releases and more.
-              </p>
-              <form class="footer-form">
-                <input
-                  type="email"
-                  class="footer-input"
-                  placeholder="Enter your email"
-                />
-                <button type="submit" class="btn btn-primary-theme">
-                  Submit
-                </button>
-              </form>
-              <div class="footer-social">
-                <a href="#" aria-label="Facebook"
-                  ><i class="ri-facebook-fill"></i
-                ></a>
-                <a href="#" aria-label="Instagram"
-                  ><i class="ri-instagram-line"></i
-                ></a>
-                <a href="#" aria-label="Telegram"
-                  ><i class="ri-telegram-line"></i
-                ></a>
-              </div>
+          <div class="footer-col footer-newsletter">
+            <h6 class="footer-heading">Get full updation</h6>
+            <p class="footer-text">
+              Receive the latest updates on our new releases and more.
+            </p>
+            <form class="footer-form">
+              <input type="email" class="footer-input" placeholder="Enter your email" />
+              <button type="submit" class="btn btn-primary-theme">
+                Submit
+              </button>
+            </form>
+            <div class="footer-social">
+              <a href="#" aria-label="Facebook"><i class="ri-facebook-fill"></i></a>
+              <a href="#" aria-label="Instagram"><i class="ri-instagram-line"></i></a>
+              <a href="#" aria-label="Telegram"><i class="ri-telegram-line"></i></a>
             </div>
           </div>
         </div>
       </div>
+    </div>
 
-      <div class="footer-bottom">
-        <div class="main-container footer-bottom-inner">
-          <p class="footer-copy">All rights reserved by Bossify</p>
-          <div class="footer-bottom-links">
-            <a href="#">Terms of Service</a>
-            <a href="#">Privacy Policy</a>
-          </div>
+    <div class="footer-bottom">
+      <div class="main-container footer-bottom-inner">
+        <p class="footer-copy">All rights reserved by Bossify</p>
+        <div class="footer-bottom-links">
+          <a href="#">Terms of Service</a>
+          <a href="#">Privacy Policy</a>
         </div>
       </div>
-    </footer>
+    </div>
+  </footer>
 
-    <!-- Back To Top -->
-    <button class="scrollToTopBtn">
-      <i class="ri-arrow-up-line"></i>
-    </button>
+  <!-- Back To Top -->
+  <button class="scrollToTopBtn">
+    <i class="ri-arrow-up-line"></i>
+  </button>
 
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.min.js"></script>
-    <script src="js/gsap.min.js"></script>
-    <script src="js/ScrollTrigger.min.js"></script>
-    <script src="js/lenis.min.js"></script>
-    <script src="js/lenisInstallation.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <!-- Swiper JS -->
-    <script src="js/swiper-bundle.min.js"></script>
-    <script src="js/owl-custom.js"></script>
-    <script src="js/owl-customPrd.js"></script>
-    <script src="js/topContentRotateAnimation.js"></script>
-    <script src="js/mobMenu.js"></script>
-    <script src="js/scroll-to-top.js"></script>
-    <script src="js/headerMegaMenuButtonHover.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/gsap.min.js"></script>
+  <script src="js/ScrollTrigger.min.js"></script>
+  <script src="js/lenis.min.js"></script>
+  <script src="js/lenisInstallation.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <!-- Swiper JS -->
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/owl-custom.js"></script>
+  <script src="js/owl-customPrd.js"></script>
+  <script src="js/topContentRotateAnimation.js"></script>
+  <script src="js/mobMenu.js"></script>
+  <script src="js/scroll-to-top.js"></script>
+  <script src="js/headerMegaMenuButtonHover.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.8.1/nouislider.js"></script>
+  <script src="js/price-range.js"></script>
 
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const links = document.querySelectorAll(".header-links");
-        const darkSections = document.querySelectorAll(".dark-bg");
-        const whiteSections = document.querySelectorAll(".white-bg");
-        const headerHeight = 60;
-        const startScroll = 5; // pixels after which we start managing classes
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const links = document.querySelectorAll(".header-links");
+      const darkSections = document.querySelectorAll(".dark-bg");
+      const whiteSections = document.querySelectorAll(".white-bg");
+      const headerHeight = 60;
+      const startScroll = 5; // pixels after which we start managing classes
 
-        function isHeaderOver(sections) {
-          let over = false;
-          sections.forEach((section) => {
-            const rect = section.getBoundingClientRect();
-            if (rect.top <= headerHeight && rect.bottom >= headerHeight) {
-              over = true;
-            }
-          });
-          return over;
-        }
+      function isHeaderOver(sections) {
+        let over = false;
+        sections.forEach((section) => {
+          const rect = section.getBoundingClientRect();
+          if (rect.top <= headerHeight && rect.bottom >= headerHeight) {
+            over = true;
+          }
+        });
+        return over;
+      }
 
-        function updateHeaderLinksColor() {
-          // Before this scroll amount, do NOTHING with classes
-          if (window.scrollY < startScroll) return;
+      function updateHeaderLinksColor() {
+        // Before this scroll amount, do NOTHING with classes
+        if (window.scrollY < startScroll) return;
 
-          const overDark = isHeaderOver(darkSections);
-          const overWhite = isHeaderOver(whiteSections);
+        const overDark = isHeaderOver(darkSections);
+        const overWhite = isHeaderOver(whiteSections);
 
-          links.forEach((link) => {
-            link.classList.remove("scrolled-white", "scrolled-black");
-            if (overDark) {
-              link.classList.add("scrolled-white");
-            } else if (overWhite) {
-              link.classList.add("scrolled-black");
-            } else {
-              link.classList.add("scrolled-black");
-            }
-          });
-        }
+        links.forEach((link) => {
+          link.classList.remove("scrolled-white", "scrolled-black");
+          if (overDark) {
+            link.classList.add("scrolled-white");
+          } else if (overWhite) {
+            link.classList.add("scrolled-black");
+          } else {
+            link.classList.add("scrolled-black");
+          }
+        });
+      }
 
-        window.addEventListener("scroll", updateHeaderLinksColor);
-      });
-    </script>
+      window.addEventListener("scroll", updateHeaderLinksColor);
+    });
+  </script>
 
-    <!-- <script src="js/headerMegaMenu.js"></script> -->
+  <!-- <script src="js/headerMegaMenu.js"></script> -->
 
-    <script>
-      const header = document.querySelector("header");
+  <script>
+    const header = document.querySelector("header");
 
-      window.addEventListener("scroll", () => {
-        if (window.scrollY > 0) {
-          header.classList.add("head-scrolling");
-        } else {
-          header.classList.remove("head-scrolling");
-        }
-      });
-    </script>
-  </body>
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 0) {
+        header.classList.add("head-scrolling");
+      } else {
+        header.classList.remove("head-scrolling");
+      }
+    });
+  </script>
+</body>
+
 </html>

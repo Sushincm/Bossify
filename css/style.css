@@ -1867,7 +1867,169 @@ position: static !important;
   color: #000 !important;
 }
 
+/* All product  */
+.bossify-plp{
+  background: #fff;
+}
 
+/* Left filter panel */
+.bossify-filter-card{
+  border: 1px solid #eee;
+  background: #fff;
+  padding: 16px;
+}
+
+.bossify-filter-title{
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.bossify-hr{
+  margin: 14px 0;
+  opacity: .15;
+}
+
+.bossify-scrollbox{
+  max-height: 220px;
+  overflow: auto;
+  padding-right: 6px;
+}
+
+/* Checkbox styling (simple + modern) */
+.bossify-check{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 9px 0;
+  cursor: pointer;
+  user-select: none;
+}
+
+.bossify-check-input{
+  width: 18px;
+  height: 18px;
+  accent-color: var(--primary-color);
+  flex: 0 0 auto;
+}
+
+.bossify-check-label{
+  color: #222;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  font-size: 15px;
+}
+
+.bossify-check-label small{
+  color: #777;
+}
+
+/* Price slider area */
+.bossify-price-slider{
+  margin-top: 8px;
+  padding: 0 15px;
+}
+
+.bossify-price-values{
+  display: flex;
+  justify-content: space-between;
+  color: #333;
+  font-weight: 500;
+}
+.noUi-horizontal .noUi-handle {
+  width: 29px;
+  height: 22px;
+  right: -17px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.noUi-horizontal {
+  height: 7px;
+}
+.noUi-connect {
+  background: var(--primary-color);
+}
+/* Right top bar */
+.bossify-plp-heading{
+  letter-spacing: .04em;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.bossify-filter-btn{
+  border: 0;
+  background: transparent;
+  display: inline-flex;
+  gap: 10px;
+  align-items: center;
+  font-weight: 600;
+  color: #111;
+}
+
+.bossify-filter-btn i{
+  font-size: 20px;
+}
+
+/* Product cards */
+.bossify-product-card{
+  color: inherit;
+}
+
+.bossify-product-img{
+  background: #f1f1f1;
+  overflow: hidden;
+}
+
+.bossify-product-img img{
+  width: 100%;
+  height: 520px;
+  object-fit: cover;
+  display: block;
+}
+
+.bossify-product-meta{
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 2px 0;
+  align-items: flex-start;
+}
+
+.bossify-product-name{
+  font-size: .9rem;
+  letter-spacing: .04em;
+  color: #111;
+  flex: 1;
+}
+
+.bossify-product-price{
+  font-weight: 700;
+  color: #111;
+  white-space: nowrap;
+}
+
+.bossify-product-swatches{
+  width: 100%;
+  margin-top: 8px;
+  display: flex;
+  gap: 6px;
+}
+
+.bossify-swatch-dot{
+  width: 12px;
+  height: 12px;
+  border-radius: 2px;
+  background: var(--dot);
+  box-shadow: 0 0 0 1px #cfcfcf;
+}
+
+/* Responsive image height like listing */
+@media (max-width: 991.98px){
+  .bossify-product-img img{ height: 360px; }
+}
+
+/* All product  */
 /* responsive */
 @media (max-width: 992px) {
   .footer-columns {
