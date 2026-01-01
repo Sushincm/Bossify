@@ -1558,7 +1558,7 @@ header.head-scrolling .nav-logo img {
 }
 
 .bossify-pdp-title {
-  font-size: 1.6rem;
+  font-size: 1.3rem;
   color: var(--pdp-text);
 }
 
@@ -1719,7 +1719,9 @@ position: static !important;
 .subpage-header .top-bar-second{
   background-color: #e2e2e2 !important;
 }
-
+.subpage-header .search-nav button{
+  color: #0000007a;
+}
 .bossify-desc-material{
   font-weight: 600;
   color: #7a7a7a;
@@ -1756,6 +1758,113 @@ position: static !important;
 .bossify-desc-sku{
   font-weight: 700;
   color: #777;
+}
+
+.bossify-related-title{
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #111;
+}
+
+/* Card */
+.bossify-related-card{
+  color: inherit;
+}
+
+.bossify-related-img{
+  position: relative;
+  background: #eef2f4;
+  overflow: hidden;
+}
+
+.bossify-related-img img{
+  width: 100%;
+  height: 520px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Wishlist icon */
+.bossify-wish{
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 0;
+  background: rgba(255,255,255,.85);
+  display: grid;
+  place-items: center;
+  color: #333;
+}
+
+.bossify-related-body{
+  padding: 12px 4px 0;
+}
+
+.bossify-related-name{
+  font-size: .95rem;
+  color: #111;
+}
+
+.bossify-related-price{
+  margin-top: 2px;
+  color: #666;
+}
+
+/* Color dots */
+.bossify-related-swatches{
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+  align-items: center;
+}
+
+.bossify-dot{
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--dot);
+  box-shadow: 0 0 0 1px #cfcfcf;
+}
+
+.bossify-dot.is-active{
+  box-shadow: 0 0 0 2px #111;
+}
+
+/* Owl nav buttons (round, primary color, remix icons) */
+.bossify-related-wrap .owl-nav button.owl-prev,
+.bossify-related-wrap .owl-nav button.owl-next{
+  position: absolute;
+  top: 42%;
+  transform: translateY(-50%);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 0;
+  background: var(--primary-color) !important;
+  color: #fff !important;
+  display: grid;
+  place-items: center;
+  opacity: 1;
+}
+
+.bossify-related-wrap .owl-nav button.owl-prev{ left: 12px; }
+.bossify-related-wrap .owl-nav button.owl-next{ right: 12px; }
+
+.bossify-related-wrap .owl-nav button i{
+  font-size: 20px;
+  line-height: 1;
+}
+
+.bossify-related-wrap .owl-nav button:focus{
+  outline: none;
+  box-shadow: none;
+}
+.subpage-header .nav-links .top-link,
+.subpage-header .nav-right i, .nav-left-icons i{
+  color: #000 !important;
 }
 
 

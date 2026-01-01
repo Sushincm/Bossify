@@ -38,9 +38,9 @@ $(document).ready(function () {
     ],
 
     // slower slide animation:
-    smartSpeed: 900, 
-    autoplaySpeed: 900, 
-    dragEndSpeed: 900, 
+    smartSpeed: 900,
+    autoplaySpeed: 900,
+    dragEndSpeed: 900,
 
     onInitialized: startProgress,
     onTranslated: startProgress,
@@ -91,7 +91,6 @@ const spotlightSwiper = new Swiper(".spotlight-swiper", {
     disableOnInteraction: false,
   },
 
-
   direction: "vertical",
   pagination: {
     el: ".spotlight-pagination",
@@ -126,8 +125,8 @@ $(function () {
     autoplay: true,
     responsive: {
       0: { items: 2 },
-      576: { items: 2 }, 
-      992: { items: 4 }, 
+      576: { items: 2 },
+      992: { items: 4 },
     },
   });
 
@@ -194,27 +193,26 @@ $(".video-testimonial-carousel").owlCarousel({
   dots: true,
   nav: false,
   responsive: {
-    0: { items: 2 }, 
+    0: { items: 2 },
     600: { items: 3 },
-    992: { items: 4 }, 
+    992: { items: 4 },
   },
 });
 
 // Modal + YouTube handling
 const vtModalEl = document.getElementById("vtModal");
 const vtVideoFrame = document.getElementById("vtVideoFrame");
-const vtModal = new bootstrap.Modal(vtModalEl); 
+const vtModal = new bootstrap.Modal(vtModalEl);
 
 document
   .querySelectorAll(".video-testimonial-carousel .vt-card")
   .forEach((card) => {
     card.addEventListener("click", () => {
-      const baseUrl = card.dataset.video; 
+      const baseUrl = card.dataset.video;
       vtVideoFrame.src = baseUrl + "?autoplay=1";
       vtModal.show();
     });
   });
-
 
 vtModalEl.addEventListener("hide.bs.modal", () => {
   vtVideoFrame.src = "";
