@@ -1877,6 +1877,7 @@ position: static !important;
   border: 1px solid #eee;
   background: #fff;
   padding: 16px;
+  height: 100%;
 }
 
 .bossify-filter-title{
@@ -1891,9 +1892,8 @@ position: static !important;
 }
 
 .bossify-scrollbox{
-  max-height: 220px;
-  overflow: auto;
-  padding-right: 6px;
+  max-height: 200px;
+  overflow-y: auto;
 }
 
 /* Checkbox styling (simple + modern) */
@@ -1907,8 +1907,8 @@ position: static !important;
 }
 
 .bossify-check-input{
-  width: 18px;
-  height: 18px;
+  width: 14px;
+  height: 14px;
   accent-color: var(--primary-color);
   flex: 0 0 auto;
 }
@@ -1918,7 +1918,7 @@ position: static !important;
   display: flex;
   gap: 8px;
   align-items: center;
-  font-size: 15px;
+  font-size: 14px;
 }
 
 .bossify-check-label small{
@@ -1940,7 +1940,7 @@ position: static !important;
 .noUi-horizontal .noUi-handle {
   width: 29px;
   height: 22px;
-  right: -17px;
+  right: -15px;
   top: 50%;
   transform: translateY(-50%);
 }
@@ -1997,16 +1997,17 @@ position: static !important;
 }
 
 .bossify-product-name{
-  font-size: .9rem;
+    font-size: 14px;
   letter-spacing: .04em;
   color: #111;
   flex: 1;
 }
 
 .bossify-product-price{
-  font-weight: 700;
+  font-weight: 400;
   color: #111;
   white-space: nowrap;
+  font-size: 14px;
 }
 
 .bossify-product-swatches{
@@ -2023,15 +2024,202 @@ position: static !important;
   background: var(--dot);
   box-shadow: 0 0 0 1px #cfcfcf;
 }
-
-/* Responsive image height like listing */
-@media (max-width: 991.98px){
-  .bossify-product-img img{ height: 360px; }
+/* .cat-position-sticky{
+  position: sticky;
+  top: 10px;
+  overflow-y: scroll;
+  height: calc(100vh - 90px);
+} */
+ .cat-position-sticky {
+  position: sticky;
+  top: 10px;
+}
+.bossify-filter {
+  align-self: flex-start; 
+}
+.plp-row{
+  display: flex;
+  flex-wrap: wrap;
+}
+.bossify-filter-btn-text{
+  font-weight: 400;
 }
 
-/* All product  */
+/* filter */
+.bossify-filter-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.25);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .2s ease, visibility .2s ease;
+  z-index: 1050;
+}
+.bossify-filter-backdrop.is-open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.bossify-filter-drawer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: min(30vw, 420px);
+  background: #ffffff;
+  z-index: 1055;
+  transform: translateX(100%);
+  transition: transform .25s ease;
+  display: flex;
+  flex-direction: column;
+  box-shadow: -18px 0 40px rgba(0,0,0,.14);
+}
+.bossify-filter-drawer.is-open {
+  transform: translateX(0);
+}
+
+
+.bossify-filter-head {
+  padding: 26px 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bossify-filter-head-title {
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.bossify-filter-close {
+  border: 0;
+  background: transparent;
+  font-size: 22px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.bossify-filter-body {
+  flex: 1;
+  overflow-y: auto;
+  padding: 12px 22px 22px;
+  -webkit-overflow-scrolling: touch;
+  height: calc(100vh - 80px);
+}
+
+.bossify-filter-label {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  margin: 0 0 14px;
+}
+
+.bossify-filter-group {
+  padding: 8px 0 0;
+}
+
+.bossify-filter-sep {
+  height: 1px;
+  background: rgba(0, 0, 0, 0.08);
+  margin: 22px 0;
+}
+
+.bossify-filter-link {
+  display: block; 
+  font-size: 13px; 
+  line-height: 1.2;
+  padding: 8px 0;
+  color: #111;
+  text-decoration: none;
+}
+.bossify-filter-link:hover {
+  color: var(--primary-color);
+}
+
+/* PRODUCT TYPE + COLOUR two-column grid */
+.bossify-filter-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 48px;
+  row-gap: 10px;
+}
+
+/* ===== Sizes row ===== */
+.bossify-filter-sizes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px 22px;
+}
+
+.bossify-filter-pill {
+  display: inline-block;
+  font-size: 13px;
+  color: #111;
+  text-decoration: none;
+  padding: 6px 2px;
+  border-bottom: 1px solid transparent;
+}
+.bossify-filter-pill:hover {
+  color: var(--primary-color);
+  border-bottom-color: var(--primary-color);
+}
+
+/* ===== Bottom buttons ===== */
+.bossify-filter-actions {
+  margin-top: 34px;
+  padding-top: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  padding: 12px 22px 22px;
+}
+
+.bossify-action-btn {
+  height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  text-transform: none;
+  text-decoration: none;
+  color: #111;
+  border: 1px solid rgba(0,0,0,.35);
+  background: #fff;
+  transition: var(--anim);
+}
+.bossify-action-btn:hover {
+  background-color: #000;
+  color: #fff;
+}
+.bossify-action-btn--ghost {
+  background: transparent;
+}
+
+.bossify-filter-link.is-active,
+.bossify-filter-pill.is-active {
+  color: var(--primary-color);
+  border-bottom-color: var(--primary-color);
+}
+.bossify-mob-filter-head{
+  display: none;
+}
+.bossify-cat-backdrop{
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.25);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .2s ease, visibility .2s ease;
+  z-index: 1050;
+}
 /* responsive */
 @media (max-width: 992px) {
+  .bossify-filter-drawer {
+    width: min(92vw, 420px);
+  }
+  .bossify-product-img img{ height: 360px; }
   .footer-columns {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
@@ -2235,6 +2423,64 @@ position: static !important;
   .bossify-btn-cart{
     font-size: .9rem;
   }
+
+  /* catagorie */
+   .bossify-mob-filter-head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 18px;
+    border-bottom: 1px solid rgba(0,0,0,.08);
+    margin: -18px -18px 18px; 
+    background: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+  }
+
+  .bossify-mob-filter-title{
+    font-size: 14px;
+    letter-spacing: .18em;
+    font-weight: 700;
+  }
+
+  .bossify-mob-filter-close{
+    border: 0;
+    background: transparent;
+    font-size: 22px;
+    line-height: 1;
+  }
+
+  .bossify-filter{
+    position: fixed;
+    top: -23px;
+    left: 0;
+    height: 100vh;
+    width: min(92vw, 420px);
+    max-width: 520px;
+    background: #fff;
+    z-index: 1055;
+    transform: translateX(-100%);
+    transition: transform .25s ease;
+    box-shadow: 18px 0 40px rgba(0,0,0,.14);
+  }
+
+  /* open state */
+  .bossify-filter.is-open{
+    transform: translateX(0);
+  }
+  .bossify-filter-card{
+    height: 100%;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    padding: 18px;
+  }
+
+  .bossify-cat-backdrop.is-open{
+    opacity: 1;
+    visibility: visible;
+  }
+
 }
 
 @media (max-width: 768.5px) {
