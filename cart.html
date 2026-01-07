@@ -380,83 +380,233 @@
       </div>
     </div>
 
-    <section class="bossify-auth">
+    <section class="bf-cart-page py-4">
       <div class="container">
-        <div class="row g-lg-5 align-items-start">
-          <div class="col-lg-6 order-1 order-lg-1 auth-border-right">
-            <div class="bossify-auth-box">
-              <h2 class="bossify-auth-title">Sign In To Your Account</h2>
-              <p class="bossify-auth-subtitle">Welcome back!</p>
-              <p class="bossify-auth-text">
-                If you already have an account with us, please sign in.
-              </p>
+        <div class="row g-4">
+          <!-- LEFT: Cart Items List -->
+          <div class="col-lg-8">
+            <div class="bf-cart-list">
+              <div class="bf-cart-list__header">
+                <h1 class="bf-cart-list__title">Shopping Cart</h1>
+                <span class="bf-cart-list__price-col">Price</span>
+              </div>
 
-              <form class="bossify-auth-form" action="#" method="post">
-                <div class="bossify-field">
-                  <label class="bossify-label" for="bossifyEmail"
-                    >E-mail/Mobile *</label
-                  >
-                  <input
-                    id="bossifyEmail"
-                    type="text"
-                    class="bossify-input"
-                    placeholder="Enter your email or mobile"
-                    required
+              <div class="bf-cart-list__hr"></div>
+
+              <!-- Item 1 -->
+              <div class="bf-cart-item" data-item-id="1" data-price="12499">
+                <div class="bf-cart-item__img">
+                  <img
+                    src="images/arrivals-1.webp"
+                    alt="Kanchipuram Silk Saree"
                   />
                 </div>
 
-                <div class="bossify-field">
-                  <label class="bossify-label" for="bossifyPassword"
-                    >Password *</label
-                  >
-
-                  <div class="bossify-password">
-                    <input
-                      id="bossifyPassword"
-                      type="password"
-                      class="bossify-input bossify-input--password"
-                      placeholder="Enter your password"
-                      required
-                    />
-                    <button
-                      class="bossify-eye"
-                      type="button"
-                      id="bossifyTogglePassword"
-                      aria-label="Toggle password"
+                <div class="bf-cart-item__body">
+                  <h3 class="bf-cart-item__title">
+                    <a href="#"
+                      >Handwoven Kanchipuram Silk Saree - Golden Zari Border</a
                     >
-                      <i class="ph-thin ph-eye"></i>
+                  </h3>
+
+                  <p class="bf-cart-item__stock bf-cart-item__stock--in">
+                    In Stock
+                  </p>
+
+                  <p class="bf-cart-item__variant">
+                    <strong>Color:</strong> Maroon &nbsp;|&nbsp;
+                    <strong>Size:</strong> Free Size
+                  </p>
+
+                  <div class="bf-cart-item__actions">
+                    <div class="bf-cart-item__qty">
+                      <label for="qty-1">Qty:</label>
+                      <select
+                        id="qty-1"
+                        class="bf-cart-item__qty-select"
+                        data-item="1"
+                      >
+                        <option value="1">1</option>
+                        <option value="2" selected>2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                      </select>
+                    </div>
+
+                    <span class="bf-cart-item__sep">|</span>
+
+                    <button class="bf-cart-item__delete" data-item="1">
+                      Delete
                     </button>
+
+                    <span class="bf-cart-item__sep">|</span>
+
+                    <button class="bf-cart-item__save">Save for later</button>
                   </div>
                 </div>
 
-                <div class="bossify-auth-row">
-                  <label class="bossify-remember">
-                    <input type="checkbox" />
-                    <span>Remember Me</span>
-                  </label>
+                <div class="bf-cart-item__price">
+                  ₹<span class="bf-cart-item__price-val">12,499</span>
+                </div>
+              </div>
 
-                  <a class="bossify-link" href="#">Forgot password?</a>
+              <div class="bf-cart-list__hr"></div>
+
+              <!-- Item 2 -->
+              <div class="bf-cart-item" data-item-id="2" data-price="3299">
+                <div class="bf-cart-item__img">
+                  <img
+                    src="images/arrivals-2.webp"
+                    alt="Temple Jewellery Set"
+                  />
                 </div>
 
-                <button
-                  class="bossify-btn bossify-btn-primary w-100"
-                  type="submit"
-                >
-                  Sign In
-                </button>
-              </form>
+                <div class="bf-cart-item__body">
+                  <h3 class="bf-cart-item__title">
+                    <a href="#">Temple Jewellery Necklace Set - Gold Plated</a>
+                  </h3>
+
+                  <p class="bf-cart-item__stock bf-cart-item__stock--in">
+                    In Stock
+                  </p>
+
+                  <p class="bf-cart-item__variant">
+                    <strong>Material:</strong> Brass, Gold Plated
+                  </p>
+
+                  <div class="bf-cart-item__actions">
+                    <div class="bf-cart-item__qty">
+                      <label for="qty-2">Qty:</label>
+                      <select
+                        id="qty-2"
+                        class="bf-cart-item__qty-select"
+                        data-item="2"
+                      >
+                        <option value="1" selected>1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                      </select>
+                    </div>
+
+                    <span class="bf-cart-item__sep">|</span>
+
+                    <button class="bf-cart-item__delete" data-item="2">
+                      Delete
+                    </button>
+
+                    <span class="bf-cart-item__sep">|</span>
+
+                    <button class="bf-cart-item__save">Save for later</button>
+                  </div>
+                </div>
+
+                <div class="bf-cart-item__price">
+                  ₹<span class="bf-cart-item__price-val">3,299</span>
+                </div>
+              </div>
+
+              <div class="bf-cart-list__hr"></div>
+
+              <!-- Item 3 -->
+              <div class="bf-cart-item" data-item-id="3" data-price="1899">
+                <div class="bf-cart-item__img">
+                  <img src="images/arrivals-3.webp" alt="Ethnic Kurta Set" />
+                </div>
+
+                <div class="bf-cart-item__body">
+                  <h3 class="bf-cart-item__title">
+                    <a href="#"
+                      >Women's Cotton Kurta Set with Palazzo - Floral Print</a
+                    >
+                  </h3>
+
+                  <p class="bf-cart-item__stock bf-cart-item__stock--in">
+                    In Stock
+                  </p>
+
+                  <p class="bf-cart-item__variant">
+                    <strong>Color:</strong> Sky Blue &nbsp;|&nbsp;
+                    <strong>Size:</strong> M
+                  </p>
+
+                  <div class="bf-cart-item__actions">
+                    <div class="bf-cart-item__qty">
+                      <label for="qty-3">Qty:</label>
+                      <select
+                        id="qty-3"
+                        class="bf-cart-item__qty-select"
+                        data-item="3"
+                      >
+                        <option value="1" selected>1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                      </select>
+                    </div>
+
+                    <span class="bf-cart-item__sep">|</span>
+
+                    <button class="bf-cart-item__delete" data-item="3">
+                      Delete
+                    </button>
+
+                    <span class="bf-cart-item__sep">|</span>
+
+                    <button class="bf-cart-item__save">Save for later</button>
+                  </div>
+                </div>
+
+                <div class="bf-cart-item__price">
+                  ₹<span class="bf-cart-item__price-val">1,899</span>
+                </div>
+              </div>
+
+              <div class="bf-cart-list__hr"></div>
+
+              <!-- Subtotal (desktop bottom, optional) -->
+              <div class="bf-cart-list__subtotal">
+                Subtotal (<span id="bfCartCount">3</span> items):
+                <strong>₹<span id="bfCartSubtotalLeft">17,697</span></strong>
+              </div>
             </div>
           </div>
-          <div class="col-lg-6 order-2 order-lg-2">
-            <div class="bossify-auth-box bossify-auth-box--right">
-              <h2 class="bossify-auth-title">DON’T HAVE A BOSSIFY ACCOUNT?</h2>
-              <p class="bossify-auth-text">
-                Create an account to save favourites, track orders, and checkout
-                faster.
-              </p>
-              <a class="bossify-btn bossify-btn-outline w-100" href="#">
-                Register to Bossify
-              </a>
+
+          <!-- RIGHT: Summary -->
+          <div class="col-lg-4">
+            <div class="bf-promo-sticky">
+              <div class="bf-cart-summary">
+                <p class="bf-cart-summary__free">
+                  <i class="ph ph-check-circle"></i>
+                  Your order is eligible for FREE Delivery.
+                </p>
+
+                <p class="bf-cart-summary__subtotal">
+                  Subtotal (<span id="bfCartCountRight">3</span> items):
+                  <strong>₹<span id="bfCartSubtotalRight">17,697</span></strong>
+                </p>
+
+                <label class="bf-cart-summary__gift">
+                  <input type="checkbox" />
+                  <span>This order contains a gift</span>
+                </label>
+
+                <button class="bf-cart-summary__btn" type="button">
+                  Proceed to Buy
+                </button>
+              </div>
+
+              <!-- Optional promo/EMI -->
+              <div class="bf-cart-promo">
+                <p class="bf-cart-promo__title">EMI Available</p>
+                <p class="bf-cart-promo__text">
+                  Your order qualifies for EMI with select cards.
+                  <a href="#">Learn more</a>
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -623,6 +773,7 @@
     <script src="js/mobMenu.js"></script>
     <script src="js/scroll-to-top.js"></script>
     <script src="js/passowordShow.js"></script>
+    <script src="js/shoppingCart.js"></script>
 
     <script>
       document.addEventListener("DOMContentLoaded", function () {
