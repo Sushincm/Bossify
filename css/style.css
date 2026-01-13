@@ -35,9 +35,7 @@
   --header-offset: 150px;
 }
 
-html {
-  scroll-behavior: smooth;
-}
+
 
 body {
   font-family: var(--bricol-font);

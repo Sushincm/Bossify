@@ -17,10 +17,14 @@ function handleScroll() {
 
 function scrollToTop() {
   // Scroll to top logic
-  rootElement.scrollTo({
-    top: 0,
-    behavior: "smooth"
-  })
+  if (window.lenis) {
+    window.lenis.scrollTo(0);
+  } else {
+    rootElement.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  }
 }
 scrollToTopBtn.addEventListener("click", scrollToTop)
 document.addEventListener("scroll", handleScroll)

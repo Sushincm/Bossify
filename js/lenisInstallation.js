@@ -1,7 +1,40 @@
 document.addEventListener("DOMContentLoaded", () => {
+  // Initialize Lenis
   const lenis = new Lenis({
     autoRaf: true,
     smooth: true,
+    lerp: 0.1, // Adjust for smoothness preference
+  });
+  window.lenis = lenis;
+
+  // Listen for the scroll event and log the event data
+  // lenis.on('scroll', (e) => {
+  //   console.log(e);
+  // });
+
+  // Synchronize Lenis scroll with GSAP ScrollTrigger
+  // lenis.on('scroll', ScrollTrigger.update);
+  // gsap.ticker.add((time) => {
+  //   lenis.raf(time * 1000);
+  // });
+  // gsap.ticker.lagSmoothing(0);
+
+  // Handle Anchor Links
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      const targetId = this.getAttribute('href');
+      if (targetId && targetId !== '#') {
+          const targetElement = document.querySelector(targetId);
+          if (targetElement) {
+              lenis.scrollTo(targetElement, {
+                  offset: 0, // Adjust offset if you have a fixed header
+                  duration: 1.2,
+                  easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), 
+              });
+          }
+      }
+    });
   });
   
   const section = document.querySelector("#featured-products");
