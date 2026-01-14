@@ -157,7 +157,6 @@
   font-weight: 500;
 }
 
-/* Submit Button */
 .btn-primary-custom {
   background-color: var(--primary-color, #7a0f0e);
   color: #fff;
@@ -173,6 +172,58 @@
   color: #fff;
 }
 
+/* Privacy & Terms Policy Sections */
+.policy-section {
+  background-color: #fffaf5;
+}
+
+.policy-container {
+  background-color: #ffffff;
+  padding: 3rem 4rem;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.08);
+  max-width: 1000px;
+  margin: 0 auto;
+  border-radius: 4px;
+}
+
+.policy-heading {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.policy-main-title {
+  font-size: 1.7rem;
+  font-weight: 400;
+  color: #000;
+  margin-bottom: 0.5rem;
+}
+
+.policy-sub-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  color: #000;
+}
+
+.policy-content p {
+  font-family: system-ui, -apple-system, sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.8;
+  color: #444;
+  margin-bottom: 1.5rem;
+  text-align: justify;
+}
+
+.policy-content h4 {
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin-top: 1.6rem;
+  margin-bottom: 1rem;
+  color: #222;
+  text-transform: uppercase;
+}
 
 /* Responsive */
 @media (max-width: 991px) {
@@ -183,5 +234,17 @@
 @media (max-width: 768px) {
   .section-title-italic {
     font-size: 2rem;
+  }
+  .policy-container {
+    padding: 15px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.229);
+  }
+  .policy-main-title {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 550px){
+  .policy-main-title{
+    font-size: 1.5rem;
   }
 }
