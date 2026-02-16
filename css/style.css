@@ -70,6 +70,62 @@ a {
   height: 20px;
 }
 
+/* cart-count sec */
+.cartWrapper span {
+  background: burlywood;
+  width: 25px;
+  height: 25px;
+  color: #000;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 50%;
+  display: -webkit-flex !important;
+  display: -moz-flex !important;
+  display: -ms-flex !important;
+  display: -o-flex !important;
+  display: flex !important;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -o-align-items: center;
+  -ms-align-items: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -o-justify-content: center;
+  position: absolute;
+  top: 74px;
+  right: -2px;
+}
+/* cart-count sec */
+
+/* delivery address */
+.adressmainnavAll {
+  margin-bottom: 20px
+}
+
+.adressmainnavAll li {
+  display: inline-block;
+  padding-right: 4px;
+}
+
+.adressmainnavAll a {
+  border-radius: 4px;
+  border: 2px #06a91a solid;
+  width: 82px;
+  padding: 4px;
+  display: block;
+  color: #06a91a;
+  font-size: 17px;
+
+  font-weight: normal;
+  text-align: center;
+}
+
+.adressmainnavAll a:hover {
+  border: 2px #f46d00 solid !important;
+  color: #f46d00 !important;
+}
+/* delivery address */
+
 .top-bar {
   color: #fff;
   font-size: 0.85rem;
@@ -135,8 +191,14 @@ header {
   transition: var(--anim);
   padding: 0 1%;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0));
+  position: relative;
+  height: 113px;
 }
-
+.header-content .nav-logo{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
 header.head-scrolling .header-content {
   background: transparent;
 }
@@ -1892,6 +1954,18 @@ header.head-scrolling .nav-logo img {
   margin-bottom: 12px;
 }
 
+/* sort dropdown-products */
+.lowwrap select {
+  display: block;
+  height: 34px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #000;
+  background-color: #fff;
+  background-image: none;
+  border: none !important;
+}
+
 .bossify-hr {
   margin: 14px 0;
   opacity: .15;
@@ -3257,6 +3331,7 @@ header.head-scrolling .nav-logo img {
 
   header.head-scrolling .header-content {
     background-color: #fff;
+    height: 60px;
   }
 
   header.head-scrolling .header-content i {
